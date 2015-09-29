@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/eliaslfox/MissionBit-Fall-2015/issues"
   },
-  "homepage": "https://github.com/eliaslfox/MissionBit-Fall-2015"
+  "homepage": "https://github.com/eliaslfox/MissionBit-Fall-2015",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
