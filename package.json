@@ -18,5 +18,10 @@
   "homepage": "https://github.com/eliaslfox/MissionBit-Fall-2015",
   "dependencies": {
     "express": "^4.13.3"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-express": "^1.4.1",
+    "grunt-open": "^0.2.3"
   }
 }
