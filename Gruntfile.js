@@ -16,11 +16,23 @@ module.exports = function(grunt) {
       server: {
         path: "http://localhost:3000"
       }
+    },
+    simplemocha: {
+      options: {
+        globals: ['should'],
+        timeout: 3000,
+        ignoreLeaks: false,
+        ui: 'bdd',
+      },
+
+      all: { src: ['test/**/*.js'] }
     }
   });
 
   grunt.loadNpmTasks('grunt-express');
   grunt.loadNpmTasks('grunt-open');
+  grunt.loadNpmTasks('grunt-simple-mocha');
 
   grunt.registerTask('default', ['express', 'open', 'express-keepalive']);
+  grunt.registerTask('test', 'simplemocha');
 };
