@@ -1,7 +1,7 @@
-"use strict";
 var request = require('supertest');
 
 describe('loading express', function () {
+    "use strict";
     var server;
     beforeEach(function () {
         server = require('../../index.js').listen(3000);

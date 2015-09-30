@@ -1,68 +1,67 @@
-/*jslint node: true */
-"use strict";
-
 var path = require('path');
 
-var gruntFile = function(grunt){
-  grunt.initConfig({
-    express: {
-      server: {
-        options: {
-          hostname: '*',
-          port: 3000,
-          debug: true,
-          server: path.resolve('./index.js')
-        }
-      }
-    },
-    open: {
-      server: {
-        path: "http://localhost:3000"
-      }
-    },
-    simplemocha: {
-      options: {
-        globals: ['should'],
-        timeout: 3000,
-        ignoreLeaks: false,
-        ui: 'bdd',
-      },
-    },
-
-    jslint: {
-     server: {
-       src: [
-         '*.js',
-       ],
-       exclude: [
-         'Gruntfile.js'
-       ],
-       directives: {
-          node: true,
+module.exports = function(grunt){
+    "use strict";
+    grunt.initConfig({
+        express: {
+            server: {
+                options: {
+                    hostname: '*',
+                    port: 3000,
+                    debug: true,
+                    server: path.resolve('./index.js')
+                }
+            }
         },
-     },
-     test: {
-       src: [
-         'test/**/*.js',
-       ],
-       exclude: [
-         'Gruntfile.js'
-       ],
-       directives: {
-          mocha: true,
-          node: true,
+        open: {
+            server: {
+                path: "http://localhost:3000"
+            }
         },
-     }
-   },
-});
+        simplemocha: {
+            options: {
+                globals: ['should'],
+                timeout: 3000,
+                ignoreLeaks: false,
+                ui: 'bdd',
+                node: true,
+            },
+            all: { src: ['test/**/*.js'] }
+        },
 
-grunt.loadNpmTasks('grunt-express');
-grunt.loadNpmTasks('grunt-open');
-grunt.loadNpmTasks('grunt-simple-mocha');
-grunt.loadNpmTasks('grunt-jslint');
+        jshint: {
+            options: {
+                reporter: require('jshint-stylish'),
+                globals: {
+                    //node
+                    require: true,
+                    module: true,
+                    //mocha
+                    describe: true,
+                    it: true,
+                    //hooks (used by mocha)
+                    beforeEach: true,
+                    afterEach: true,
+                },
+            },
+            all: {
+                src: [
+                    'Gruntfile.js',
+                    'index.js',
+                    'test/**/*.js',
+                ]
+            },
+        },
+    });
 
-grunt.registerTask('default', ['express', 'open', 'express-keepalive']);
-grunt.registerTask('test', 'simplemocha');
-}
+    grunt.loadNpmTasks('grunt-express');
+    grunt.loadNpmTasks('grunt-open');
+    grunt.loadNpmTasks('grunt-simple-mocha');
+    grunt.loadNpmTasks('grunt-jslint');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
 
-module.exports = gruntFile;
+    grunt.registerTask('default', ['express', 'open', 'express-keepalive']);
+    grunt.registerTask('test', 'simplemocha');
+    grunt.registerTask('lint', 'jshint');
+    grunt.registerTask('deploy', ['lint','test']);
+};
