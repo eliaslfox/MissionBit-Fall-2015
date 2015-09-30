@@ -1,5 +1,7 @@
-describe('mocha tests', function() {
-  it('execute this test', function(done) {
-    done();
-  });
+"use strict";
+
+describe('mocha tests', function () {
+    it('execute this test', function (done) {
+        done();
+    });
 });

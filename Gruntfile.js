@@ -1,6 +1,9 @@
+/*jslint node: true */
+"use strict";
+
 var path = require('path');
 
-module.exports = function(grunt) {
+var gruntFile = function(grunt){
   grunt.initConfig({
     express: {
       server: {
@@ -24,15 +27,42 @@ module.exports = function(grunt) {
         ignoreLeaks: false,
         ui: 'bdd',
       },
+    },
 
-      all: { src: ['test/**/*.js'] }
-    }
-  });
+    jslint: {
+     server: {
+       src: [
+         '*.js',
+       ],
+       exclude: [
+         'Gruntfile.js'
+       ],
+       directives: {
+          node: true,
+        },
+     },
+     test: {
+       src: [
+         'test/**/*.js',
+       ],
+       exclude: [
+         'Gruntfile.js'
+       ],
+       directives: {
+          mocha: true,
+          node: true,
+        },
+     }
+   },
+});
 
-  grunt.loadNpmTasks('grunt-express');
-  grunt.loadNpmTasks('grunt-open');
-  grunt.loadNpmTasks('grunt-simple-mocha');
+grunt.loadNpmTasks('grunt-express');
+grunt.loadNpmTasks('grunt-open');
+grunt.loadNpmTasks('grunt-simple-mocha');
+grunt.loadNpmTasks('grunt-jslint');
 
-  grunt.registerTask('default', ['express', 'open', 'express-keepalive']);
-  grunt.registerTask('test', 'simplemocha');
-};
+grunt.registerTask('default', ['express', 'open', 'express-keepalive']);
+grunt.registerTask('test', 'simplemocha');
+}
+
+module.exports = gruntFile;
