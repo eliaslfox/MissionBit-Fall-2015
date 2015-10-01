@@ -47,10 +47,22 @@ module.exports = function(grunt){
             all: {
                 src: [
                     './*.js',
+                    './*.json',
                     'test/**/*.js',
                 ]
             },
         },
+        jsdoc : {
+            all : {
+                src: ['./*.js'],
+                jsdoc: './node_modules/.bin/jsdoc',
+                options: {
+                    destination: 'doc',
+                    configure: './node_modules/jsdoc/conf.json',
+                    template: './node_modules/ink-docstrap/template'
+                }
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-express');
@@ -58,6 +70,8 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-simple-mocha');
     grunt.loadNpmTasks('grunt-jslint');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-apidoc');
+    grunt.loadNpmTasks('grunt-jsdoc');
 
     grunt.registerTask('launch', ['express', 'open', 'express-keepalive']);
     grunt.registerTask('test', 'simplemocha');
