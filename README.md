@@ -13,7 +13,7 @@ All of the packages are up to date and saved as standard or dev requirments.
 Grunt is setup with the following commands which can be run with,
 
 ```shell
-grunt [command]
+grunt command
 ```
 
 * lint - run jshint
@@ -23,8 +23,8 @@ grunt [command]
 
 Lint runs on the following directories
 
-* *.js
-* test/**/*.js
+* ./*.js
+* ./test/**/*.js
 
 ### Mocha
 
