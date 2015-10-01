@@ -46,8 +46,7 @@ module.exports = function(grunt){
             },
             all: {
                 src: [
-                    'Gruntfile.js',
-                    'index.js',
+                    './*.js',
                     'test/**/*.js',
                 ]
             },
@@ -60,7 +59,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-jslint');
     grunt.loadNpmTasks('grunt-contrib-jshint');
 
-    grunt.registerTask('default', ['express', 'open', 'express-keepalive']);
+    grunt.registerTask('launch', ['express', 'open', 'express-keepalive']);
     grunt.registerTask('test', 'simplemocha');
     grunt.registerTask('lint', 'jshint');
     grunt.registerTask('deploy', ['lint','test']);
