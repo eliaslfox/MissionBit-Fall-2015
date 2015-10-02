@@ -6,13 +6,13 @@ My project for Mission Bit, Fall 2015 demo day.
 
 ### Grunt
 
-Grunt is setup, the error checking can be run with
+Error Checking
 
 ```shell
 grunt deploy
 ```
 
-And the app can be opened with
+Launch
 
 ```shell
 grunt launch
@@ -20,6 +20,20 @@ grunt launch
 
 ### Jshint
 
+```shell
+grunt lint
+```
+
 ### Mocha
 
+```shell
+grunt test
+```
+
 ### Apidoc
+
+```
+grunt apidoc
+```
+
+This saves the doc file to ./apidoc/index.html
