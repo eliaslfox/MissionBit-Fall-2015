@@ -51,6 +51,16 @@ module.exports = function(grunt){
                 ]
             },
         },
+        apidoc: {
+            mypp: {
+                src: ".",
+                dest: "apidoc/",
+                options: {
+                    includeFilters: [ ".*\\.js$" ],
+                    excludeFilters: [ "node_modules/" ]
+                }
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-express');
@@ -58,9 +68,10 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-simple-mocha');
     grunt.loadNpmTasks('grunt-jslint');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-apidoc');
 
     grunt.registerTask('launch', ['express', 'open', 'express-keepalive']);
     grunt.registerTask('test', 'simplemocha');
     grunt.registerTask('lint', 'jshint');
-    grunt.registerTask('deploy', ['lint','test']);
+    grunt.registerTask('deploy', ['lint','test','apidoc']);
 };
