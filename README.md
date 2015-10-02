@@ -2,9 +2,13 @@
 
 My project for Mission Bit, Fall 2015 demo day.
 
-## Installed Tools
+## Build
 
-### Grunt
+```shell
+npm install
+```
+
+## Usage
 
 Error Checking
 
@@ -17,6 +21,8 @@ Launch
 ```shell
 grunt launch
 ```
+
+## Installed Tools
 
 ### Jshint
 
