@@ -2,39 +2,24 @@
 
 My project for Mission Bit, Fall 2015 demo day.
 
-## Progress so far
-
-### Npm
-
-All of the packages are up to date and saved as standard or dev requirments.
+## Installed Tools
 
 ### Grunt
 
-Grunt is setup with the following commands which can be run with,
+Grunt is setup, the error checking can be run with
 
 ```shell
-grunt command
+grunt deploy
 ```
 
-* lint - run jshint
-* test - run mocha
-* deploy - run both jslint and mocha
-* open - start the server and open it in browser
+And the app can be opened with
 
-Lint runs on the following directories
+```shell
+grunt launch
+```
 
-* ./*.js
-* ./test/**/*.js
+### Jshint
 
 ### Mocha
 
-Mocha is enabled for testing and currently checks tests/**/*.js. At the moment
-it tests the following modules
-
-* test/mocha - tests mocha itself
-* test/app - tests the main app file
-
-## TODO
-
-* move index.js to app.js
-* create ./lib and add it to mocha and jshint
+### Apidoc
