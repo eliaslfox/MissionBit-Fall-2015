@@ -4,7 +4,7 @@ describe('loading express', function () {
     "use strict";
     var server;
     beforeEach(function () {
-        server = require('../../index.js').listen(3000);
+        server = require('../../app.js').listen(3000);
     });
     afterEach(function () {
         server.close();
