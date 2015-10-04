@@ -48,6 +48,7 @@ module.exports = function(grunt){
                 src: [
                     './*.js',
                     'test/**/*.js',
+                    'routes/**/*.js',
                 ]
             },
         },

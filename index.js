@@ -1,19 +1,12 @@
 var express = require('express');
 var app = express();
 
-/**
- * @api {get} / Ping the server
- * @apiName Basic Ping
- * @apiGroup Ping
- *
-* @apiVersion 0.1.0
- *
- * @apiSuccessExample Success-Response:
- *     HTTP/1.1 200 OK
- *      Hello, World!
- */
+var yelpRoute = require("./routes/yelp");
+
 app.get('/', function (req, res) {
     res.send('Hello World!');
 });
+
+app.use("/yelp", yelpRoute);
 
 module.exports = app;

@@ -1,1 +1,1 @@
-define({  "name": "MissionBit-Fall-2015",  "version": "0.1.0",  "description": "TODO",  "sampleUrl": false,  "apidoc": "0.2.0",  "generator": {    "name": "apidoc",    "time": "2015-10-02T04:02:00.242Z",    "url": "http://apidocjs.com",    "version": "0.13.1"  }});
+define({  "name": "MissionBit-Fall-2015",  "version": "0.1.0",  "description": "TODO",  "sampleUrl": false,  "apidoc": "0.2.0",  "generator": {    "name": "apidoc",    "time": "2015-10-04T18:55:24.033Z",    "url": "http://apidocjs.com",    "version": "0.13.1"  }});
