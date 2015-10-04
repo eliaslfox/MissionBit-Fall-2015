@@ -1,8 +1,8 @@
 {
   "name": "MissionBit-Fall-2015",
   "version": "0.1.0",
-  "description": "TODO",
-  "main": "index.js",
+  "description": "My project for Mission Bit, Fall 2015 demo day.",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

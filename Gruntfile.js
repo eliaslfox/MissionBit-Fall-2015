@@ -9,7 +9,7 @@ module.exports = function(grunt){
                     hostname: '*',
                     port: 3000,
                     debug: true,
-                    server: path.resolve('./index.js')
+                    server: path.resolve('./app.js')
                 }
             }
         },
