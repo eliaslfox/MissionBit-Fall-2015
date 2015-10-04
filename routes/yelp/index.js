@@ -19,7 +19,10 @@ router.get('/', function(req, res) {
 * @apiName Yelp Search
 * @apiGroup Yelp
 *
-* @apiVersion 0.2.0
+* @apiVersion 0.1.0
+*
+*@apiParam {String} term Optional search term for locations.
+*@apiParam {String} location Mandatory Location term for where to search.
 *
 * @apiSuccess {Json} region Information about the searched area.
 * @apiSuccess {Intiger} total The total number of businesses which match the query.
@@ -43,10 +46,11 @@ router.get('/', function(req, res) {
 *      }
 */
 router.get('/search', function(req, res) {
-    yelp.search({term: "food", location: "Montreal"}, function(error, data) {
+    yelp.search( {term: req.query.term, location: req.query.location}, function(error, data) {
         if (error) {
             console.log(error);
             res.send(error);
+            return;
         }
         res.json(data);
     });
