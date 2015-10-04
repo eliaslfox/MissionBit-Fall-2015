@@ -15,11 +15,11 @@ router.get('/', function(req, res) {
 });
 
 /**
-* @api {get} /search Search
+* @api {get} /yelp/search Search
 * @apiName Yelp Search
 * @apiGroup Yelp
 *
-* @apiVersion 0.1.0
+* @apiVersion 0.2.0
 *
 * @apiSuccess {Json} region Information about the searched area.
 * @apiSuccess {Intiger} total The total number of businesses which match the query.

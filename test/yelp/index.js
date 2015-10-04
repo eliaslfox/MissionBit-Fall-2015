@@ -1,4 +1,5 @@
 var request = require('supertest');
+var assert = require("assert");
 
 describe('loading express', function () {
     "use strict";
@@ -13,5 +14,17 @@ describe('loading express', function () {
         request(server)
             .get('/yelp/search')
             .expect(200, done);
+    });
+    it('should have the right data', function (done) {
+        request(server)
+            .get('/yelp/search')
+            .expect(200)
+            .end(function(err,res) {
+                if (err) {
+                    throw err;
+                }
+                assert.equal(res.body.error, null);
+                done();
+            });
     });
 });
