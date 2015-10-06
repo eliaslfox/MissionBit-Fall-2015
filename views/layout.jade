@@ -6,7 +6,28 @@ html
     link(href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', rel='stylesheet', media='screen')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+  html
+body
+    .container
+        .header.clearfix
+            nav
+                ul.nav.nav-pills.pull-right
+                    li(role='presentation')
+                        a(href='/') Home
+                    
+                    if(!user)    
+                        li(role='presentation')
+                            a(href='/passport/register') Register
+                        li(role='presentation')
+                            a(href='/passport/login') Login
+                    
+                    if(user)
+                        li(role='presentation')
+                            a(href='/passport/logout') Logout    
+                    
+            h3 Mission Bit Fall 2015
+
+        block content
 
   script(src='http://code.jquery.com/jquery.js')
   script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')

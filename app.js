@@ -11,7 +11,6 @@ var LocalStrategy = require('passport-local').Strategy;
 
 var app = express();
 
-// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
@@ -32,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var passportRoute = require('./routes/passport');
 var yelpRoute = require("./routes/yelp");
+var foodRoute = require("./routes/food")
 
 // passport config
 var Account = require('./models/account');
@@ -43,10 +43,11 @@ passport.deserializeUser(Account.deserializeUser());
 mongoose.connect('mongodb://localhost/missionbit2015');
 
 app.get('/', function (req, res) {
-    res.send('Hello World!');
+    res.render('index', { user : req.user });
 });
 
 app.use("/yelp", yelpRoute);
 app.use("/passport", passportRoute);
+app.use("/food", foodRoute);
 
 module.exports = app;

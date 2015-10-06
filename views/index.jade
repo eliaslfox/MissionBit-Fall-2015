@@ -1,10 +1,13 @@
 extends layout
 
 block content
-  if (!user)
-    a(href="/passport/login") Login
-    br
-    a(href="/passport/register") Register
-  if (user)
-    p You are currently logged in as #{user.username}
-    a(href="/passport/logout") Logout
+    if (!user)
+        .jumbotron
+            h1 Welcome
+            p
+                a.btn.btn-primary.btn-lg(href="/passport/register") Register
+    if(user)
+        .jumbotron
+            h1 Welcome, #{user.username}
+            p
+                a.btn.btn-primary.btn-lg(href="/food") Get Food
