@@ -12,12 +12,12 @@ describe('loading express', function () {
     });
     it('responds to a query', function testSlash(done) {
         request(server)
-            .get('/yelp/search')
+            .get('/yelp/search?location=SF')
             .expect(200, done);
     });
     it('should have the right data', function (done) {
         request(server)
-            .get('/yelp/search')
+            .get('/yelp/search?location=SF')
             .expect(200)
             .end(function(err,res) {
                 if (err) {
