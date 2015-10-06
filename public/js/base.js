@@ -9,7 +9,6 @@ var getFood = function() {
             term: $("#term").val(),
             location: $("#location").val(),
         },
-        method: "GET",
         success: function(data) {
             $(".well").html(JSON.stringify(data));
         },
