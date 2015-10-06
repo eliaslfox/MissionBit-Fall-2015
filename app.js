@@ -32,6 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var passportRoute = require('./routes/passport');
 var yelpRoute = require("./routes/yelp");
+var foodRoute = require("./routes/food")
 
 // passport config
 var Account = require('./models/account');
@@ -46,11 +47,8 @@ app.get('/', function (req, res) {
     res.render('index', { user : req.user });
 });
 
-app.get('/food', function (req, res) {
-    res.render('food', { user : req.user });
-});
-
 app.use("/yelp", yelpRoute);
 app.use("/passport", passportRoute);
+app.use("/food", foodRoute);
 
 module.exports = app;
