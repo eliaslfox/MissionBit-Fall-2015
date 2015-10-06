@@ -20,7 +20,7 @@ module.exports = function(grunt){
         },
         simplemocha: {
             options: {
-                globals: ['should'],
+                globals: ['should', 'Promise'],
                 timeout: 3000,
                 ignoreLeaks: false,
                 ui: 'bdd',
@@ -71,7 +71,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-apidoc');
 
-    grunt.registerTask('launch', ['express', 'open', 'express-keepalive']);
+    grunt.registerTask('default', ['express', 'open', 'express-keepalive']);
     grunt.registerTask('test', 'simplemocha');
     grunt.registerTask('lint', 'jshint');
     grunt.registerTask('deploy', ['lint','test','apidoc']);

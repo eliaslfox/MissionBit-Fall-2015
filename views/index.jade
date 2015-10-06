@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  if (!user)
+    a(href="/passport/login") Login
+    br
+    a(href="/passport/register") Register
+  if (user)
+    p You are currently logged in as #{user.username}
+    a(href="/passport/logout") Logout
