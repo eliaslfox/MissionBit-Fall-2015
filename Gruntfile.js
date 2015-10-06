@@ -49,6 +49,7 @@ module.exports = function(grunt){
                     './*.js',
                     'test/**/*.js',
                     'routes/**/*.js',
+                    'public/js/*.js'
                 ]
             },
         },

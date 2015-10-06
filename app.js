@@ -43,7 +43,11 @@ passport.deserializeUser(Account.deserializeUser());
 mongoose.connect('mongodb://localhost/missionbit2015');
 
 app.get('/', function (req, res) {
-    res.send('Hello World!');
+    res.render('index', { user : req.user });
+});
+
+app.get('/food', function (req, res) {
+    res.render('food', { user : req.user });
 });
 
 app.use("/yelp", yelpRoute);

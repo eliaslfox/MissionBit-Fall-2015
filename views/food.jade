@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    script(src="/js/base.js")
+    link(rel="stylesheet", type="text/css", href="/css/base.css")
+    .jumbotron
+        .input-group.input-group-lg#location-input.food-input
+            span.input-group-btn
+                button.btn.btn-default(onclick="getLocation()") Find Me
+            input#location.form-control(placeholder="Location")
+        .input-group.input-group-lg.food-input
+            span.input-group-btn
+                button.btn.btn-default(onclick="getFood()") GO!
+            input#term.form-control(placeholder="Search")
+            
+    .well
