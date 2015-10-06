@@ -6,40 +6,23 @@ My project for Mission Bit, Fall 2015 demo day.
 
 ```shell
 npm install
+npm install mongod -g
 ```
 
 ## Usage
-
-Error Checking
-
 ```shell
-grunt deploy
+sudo mongod
+grunt
 ```
 
-Launch
+## Features
 
+### Yelp
+**Note** For yelp to work it needs a config file.
 ```shell
-grunt launch
+curl localhost:3000/yelp/search?location=SF
 ```
 
-## Installed Tools
-
-### Jshint
-
-```shell
-grunt lint
-```
-
-### Mocha
-
-```shell
-grunt test
-```
-
-### Apidoc
-
-```
-grunt apidoc
-```
-
-This saves the doc file to ./apidoc/index.html
+### Passport
+Visit location:3000/passport to use.
+**Note** Api access to passport commng soon.
