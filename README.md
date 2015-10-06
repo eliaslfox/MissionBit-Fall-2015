@@ -25,4 +25,5 @@ curl localhost:3000/yelp/search?location=SF
 
 ### Passport
 Visit location:3000/passport to use.
-**Note** Api access to passport commng soon.
+
+**Note** Api access to passport coming soon.
