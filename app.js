@@ -31,7 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 var passportRoute = require('./routes/passport');
 var yelpRoute = require("./routes/yelp");
-var foodRoute = require("./routes/food")
+var foodRoute = require("./routes/food");
 
 // passport config
 var Account = require('./models/account');
