@@ -1,26 +1,59 @@
-var getLocation = function() {
-    alert("This doesn't work yet :(");
-};
 
-var getFood = function() {
-    $.ajax({
-        url: "/yelp/search",
-        data: {
-            term: $("#term").val(),
-            location: $("#location").val(),
-        },
-        success: function(data) {
-            var each = data.businesses;
-            $(".jumbotron").hide();
-            for (i=0; i<3; i++) {
-                $('#resturants').append("<div class='col-md-4'><div class='panel panel-default' id='food" +i+ "'></div></div>");
-                $("#food"+i).append("<div class='panel-heading'> <h3 class='panel-title'>" +each[i].name+ "</h3></div>");
-                $("#food"+i).append("<div class='panel-body' id=foodBody" +i+ ">" +each[i].location.display_address[0]+ "</div>");
-                $("#foodBody"+i).prepend("<img src='" +each[i].rating_img_url+ "' /><br />");
-                $("#foodBody"+i).prepend("<img src='" +each[i].image_url+ "' /><br />");
-                $("#foodBody"+i).append("<p><a href=" +each[i].url+">Yelp Site</a></p>");
-                $("#foodBody"+i).append("<p><a href='https://www.google.com/maps?saddr=My+Location&daddr="+each[i].location.display_address[0]+"'>Google Maps Directions</a></p>");
-            }
-        },
-    });
-};
+var myApp = angular.module('myApp',['ngRoute']);
+
+myApp.controller('GreetingController', ['$scope', function($scope) {
+    $scope.greeting = 'Hola!';
+}]);
+
+myApp.controller('DoubleController', ['$scope', function($scope) {
+    $scope.double = function(value) { return value * 2; };
+}]);
+
+myApp.controller('SpicyController', ['$scope', function($scope) {
+    $scope.customSpice = "wasabi";
+    $scope.spice = 'very';
+
+    $scope.spicy = function(spice) {
+        $scope.spice = spice;
+    };
+}])
+
+myApp.controller('AlertController', ['$scope','notify', function ($scope, notify) {
+        $scope.callNotify = function(msg) {
+            notify(msg);
+        };
+}]);
+myApp.factory('notify', ['$window', function(win) {
+    var msgs = [];
+    return function(msg) {
+        msgs.push(msg);
+        if (msgs.length == 3) {
+            win.alert(msgs.join("\n"));
+            msgs = [];
+        }
+    };
+}]);
+
+myApp.config(['$routeProvider',
+    function($routeProvider) {
+        $routeProvider.
+            when('/greeting', {
+                templateUrl: 'partials/greeting.html',
+                controller: 'GreetingController'
+            }).
+            when('/spicy', {
+                templateUrl: 'partials/spicy.html',
+                controller: 'SpicyController'
+            }).
+            when('/double', {
+                templateUrl: 'partials/double.html',
+                controller: 'DoubleController'
+            }).
+            when('/alert', {
+                templateUrl: 'partials/alert.html',
+                controller: 'AlertController'
+            }).
+            otherwise({
+                redirectTo: '/greeting'
+            });
+    }]);

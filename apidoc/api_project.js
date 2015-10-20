@@ -1,1 +1,0 @@
-define({  "name": "MissionBit-Fall-2015",  "version": "0.1.0",  "description": "My project for Mission Bit, Fall 2015 demo day.",  "sampleUrl": false,  "apidoc": "0.2.0",  "generator": {    "name": "apidoc",    "time": "2015-10-07T01:21:02.861Z",    "url": "http://apidocjs.com",    "version": "0.13.1"  }});
