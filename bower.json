@@ -1,12 +1,12 @@
 {
-  "name": "MissionBit-Fall-2015",
-  "description": "My project for Mission Bit, Fall 2015 demo day.",
+  "name": "Get-Me-Food",
+  "description": "An app for finding restaurants.",
   "main": "app.js",
   "authors": [
     "Elias Lawson-Fox <eliaslfox@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/eliaslfox/MissionBit-Fall-2015",
+  "homepage": "https://github.com/eliaslfox/Get-Me-Food",
   "moduleType": [
     "node"
   ],

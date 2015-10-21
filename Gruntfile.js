@@ -3,6 +3,7 @@ var path = require('path');
 module.exports = function(grunt){
     "use strict";
     grunt.initConfig({
+        pkg: grunt.file.readJSON('package.json'),
         express: {
             server: {
                 options: {
@@ -18,43 +19,25 @@ module.exports = function(grunt){
                 path: "http://localhost:3000"
             }
         },
-        simplemocha: {
-            options: {
-                globals: ['should', 'Promise'],
-                timeout: 3000,
-                ignoreLeaks: false,
-                ui: 'bdd',
-                node: true,
-            },
-            all: { src: ['test/**/*.js'] }
-        },
-
         jshint: {
             options: {
                 reporter: require('jshint-stylish'),
                 globals: {
                     //node
                     require: true,
-                    module: true,
-                    //mocha
-                    describe: true,
-                    it: true,
-                    //hooks (used by mocha)
-                    beforeEach: true,
-                    afterEach: true,
-                },
+                    module: true
+                }
+
             },
             all: {
                 src: [
                     './*.js',
-                    'test/**/*.js',
-                    'routes/**/*.js',
                     'public/js/*.js'
                 ]
-            },
+            }
         },
         apidoc: {
-            mypp: {
+            all: {
                 src: ".",
                 dest: "apidoc/",
                 options: {
@@ -62,18 +45,27 @@ module.exports = function(grunt){
                     excludeFilters: [ "node_modules/" ]
                 }
             }
+        },
+        uglify: {
+            options: {
+                beautify: true,
+                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n',
+                mangle: false
+            },
+            all: {
+                src: 'public/js/src/main.js',
+                dest: 'public/js/dist/main.min.js'
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-express');
     grunt.loadNpmTasks('grunt-open');
-    grunt.loadNpmTasks('grunt-simple-mocha');
-    grunt.loadNpmTasks('grunt-jslint');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-apidoc');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
 
     grunt.registerTask('default', ['express', 'open', 'express-keepalive']);
-    grunt.registerTask('test', 'simplemocha');
-    grunt.registerTask('lint', 'jshint');
-    grunt.registerTask('deploy', ['lint','test','apidoc']);
+    grunt.registerTask('build', ['jshint','apidoc', 'uglify']);
 };
