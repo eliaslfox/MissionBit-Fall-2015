@@ -1,8 +1,8 @@
 
 var myApp = angular.module('myApp',['ngRoute']);
 
-myApp.controller('GreetingController', ['$scope', function($scope) {
-    $scope.greeting = 'Hola!';
+myApp.controller('HomeController', ['$scope', function($scope) {
+    $scope.greeting = 'Welcome!';
 }]);
 
 myApp.controller('DoubleController', ['$scope', function($scope) {
@@ -16,44 +16,27 @@ myApp.controller('SpicyController', ['$scope', function($scope) {
     $scope.spicy = function(spice) {
         $scope.spice = spice;
     };
-}])
-
-myApp.controller('AlertController', ['$scope','notify', function ($scope, notify) {
-        $scope.callNotify = function(msg) {
-            notify(msg);
-        };
-}]);
-myApp.factory('notify', ['$window', function(win) {
-    var msgs = [];
-    return function(msg) {
-        msgs.push(msg);
-        if (msgs.length == 3) {
-            win.alert(msgs.join("\n"));
-            msgs = [];
-        }
-    };
 }]);
 
 myApp.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
-            when('/greeting', {
-                templateUrl: 'partials/greeting.html',
-                controller: 'GreetingController'
+            when('/', {
+                templateUrl: 'partials/home.jade',
+                controller: 'HomeController'
             }).
             when('/spicy', {
-                templateUrl: 'partials/spicy.html',
+                templateUrl: 'partials/spicy.jade',
                 controller: 'SpicyController'
             }).
             when('/double', {
-                templateUrl: 'partials/double.html',
+                templateUrl: 'partials/double.jade',
                 controller: 'DoubleController'
             }).
-            when('/alert', {
-                templateUrl: 'partials/alert.html',
-                controller: 'AlertController'
+            when('/home', {
+                redirectTo: '/'
             }).
             otherwise({
-                redirectTo: '/greeting'
+                redirectTo: '/'
             });
     }]);

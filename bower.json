@@ -1,0 +1,26 @@
+{
+  "name": "MissionBit-Fall-2015",
+  "description": "My project for Mission Bit, Fall 2015 demo day.",
+  "main": "app.js",
+  "authors": [
+    "Elias Lawson-Fox <eliaslfox@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/eliaslfox/MissionBit-Fall-2015",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-route": "~1.4.7",
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}

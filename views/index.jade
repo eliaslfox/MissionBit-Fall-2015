@@ -1,0 +1,38 @@
+doctype html
+html(lang='en')
+    head
+        //Meta Base
+        meta(charset='utf-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        //Meta Data
+        title Get Me Food
+        meta(name='description', content='')
+        meta(name='author', content='Elias Lawson-Fox')
+        //Styles
+        link(rel="stylesheet", type="text/css", href="/bower_components/bootstrap/dist/css/bootstrap.min.css")
+        link(href='/css/jumbotron-narrow.css', rel='stylesheet')
+        link(rel="stylesheet", type="text/css", href="/css/base.css")
+        //Dependencies
+        script(src="/bower_components/angular/angular.min.js")
+        script(src="/bower_components/angular-route/angular-route.min.js")
+        script(src="/bower_components/jquery/dist/jquery.min.js")
+        script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
+        //Scripts
+        script(src="/js/base.js")
+
+    body(ng-app="myApp")
+    .container
+        .header.clearfix
+            nav
+                ul.nav.nav-pills.pull-right
+                    li.active(role='presentation')
+                        a(href='#/') Home
+                    li(role='presentation')
+                        a(href='#/double') Double
+                    li(role='presentation')
+                        a(href='#/spicy') Spicy
+            h3.text-muted Get Me Food
+        div(ng-view)
+        footer.footer
+            p Elias Lawson-Fox 2015
