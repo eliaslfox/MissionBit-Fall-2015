@@ -56,7 +56,15 @@ module.exports = function(grunt){
                 src: 'public/js/src/main.js',
                 dest: 'public/js/dist/main.min.js'
             }
+        },
+        shell: {
+            push: {
+                command: [
+                    'git push origin master'
+                ].join('&&')
+            }
         }
+
     });
 
     grunt.loadNpmTasks('grunt-express');
@@ -65,7 +73,9 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-apidoc');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-');
 
     grunt.registerTask('default', ['express', 'open', 'express-keepalive']);
     grunt.registerTask('build', ['jshint','apidoc', 'uglify']);
+    grunt.registerTask('deploy', ['shell']);
 };
