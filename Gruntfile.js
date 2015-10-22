@@ -60,7 +60,7 @@ module.exports = function(grunt){
         shell: {
             push: {
                 command: [
-                    'git push New-Angular-Site master'
+                    'git push origin New-Angular-Site'
                 ].join('&&')
             }
         }
