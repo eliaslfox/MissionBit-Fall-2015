@@ -23,7 +23,6 @@ module.exports = function(grunt){
             options: {
                 reporter: require('jshint-stylish'),
                 globals: {
-                    //node
                     require: true,
                     module: true
                 }
@@ -32,7 +31,8 @@ module.exports = function(grunt){
             all: {
                 src: [
                     './*.js',
-                    'public/js/*.js'
+                    'public/js/**/*.js',
+                    'public/js/src/**/*.js'
                 ]
             }
         },

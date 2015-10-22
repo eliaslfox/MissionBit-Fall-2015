@@ -1,10 +1,6 @@
-angular.module("getMeFood")
-    .factory("yelp", function() {
-        var search = function(location, term) {
-            return "Yelp data";
-        };
-        return {search: search};
-    })
-    .controller("getFood", ["$scope", "yelp", function($scope, yelp) {
-        $scope.yelpData = yelp.search("San Francisco", "Tacos");
+angular.module("getMeFood").controller("getFood", ["$scope", "yelp", function($scope, yelp) {
+        yelp.search("San Francisco", "Tacos", function(data) {
+            $scope.restaurants = data;
+            console.log($scope.restaurants);
+        });
     }]);

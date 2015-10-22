@@ -30,6 +30,10 @@ app.get('/partials/:id', function(req, res) {
    res.render(__dirname+'/views/partials/'+req.params.id);
 });
 
+app.get('/test', function(req, res) {
+    res.send("hi from /test");
+});
+
 
 //Export the app object
 module.exports = app;
