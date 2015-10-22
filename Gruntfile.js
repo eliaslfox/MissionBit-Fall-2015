@@ -73,7 +73,7 @@ module.exports = function(grunt){
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-apidoc');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-');
+    grunt.loadNpmTasks('grunt-shell');
 
     grunt.registerTask('default', ['express', 'open', 'express-keepalive']);
     grunt.registerTask('build', ['jshint','apidoc', 'uglify']);
