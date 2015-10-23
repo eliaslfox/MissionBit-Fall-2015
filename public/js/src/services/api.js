@@ -1,16 +1,11 @@
-angular.module("getMeFood").service("api", [function() {
-    var apiSearch = function(url, data, callback) {
-        $.ajax({
-            url: url,
-            method: "GET",
-            data: data,
-            complete: callback
-        });
-    };
-    this.yelp = function(location, term, callback) {
-      apiSearch("/test", {
-         location: location,
-          term: term
-      }, callback);
+angular.module("getMeFood")
+.factory('api', ["$http",function($http) {
+    return {
+        get: function(url) {
+            return $http.get(url)
+                .then(function(result) {
+                    return result.data;
+                });
+        }
     };
 }]);

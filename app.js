@@ -20,6 +20,8 @@ app.set('view engine', 'jade');
 * Routes
 */
 
+var apiRoute = require('./routes/api.js');
+
 //Spa home page
 app.get('/', function (req, res) {
     res.render("index");
@@ -34,6 +36,8 @@ app.get('/test', function(req, res) {
     res.send("hi from /test");
 });
 
+//Yelp Api
+app.use('/api', apiRoute);
 
 //Export the app object
 module.exports = app;

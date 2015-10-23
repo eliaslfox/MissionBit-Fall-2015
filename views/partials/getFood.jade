@@ -1,3 +1,21 @@
-div(ng-controller="getFood")
-    input(ng-model="restaurants")
-    p {{ restaurants }}
+div(ng-controller="getFood").container
+
+    div(ng-show="mode == 'INPUT'").jumbotron
+        form
+            input(ng-model="location", placeholder="Location").form-control
+            br
+            input(ng-model="term", placeholder="Search Term").form-control
+            br
+            .centerDiv
+                a.btn.btn-lg.btn-default#getFoodButton(href='#/getFood', role='button', ng-click="search()") Search
+
+    div(ng-repeat="restaurant in restaurants | limitTo:3" ng-show="mode == 'OUTPUT'")
+        div.panel.panel-default
+            div.panel-heading
+                h3 {{ restaurant.name }}
+            div.panel-body
+                img(src="{{ restaurant.rating_img_url }}")
+                br
+                img(src="{{ restaurant.image_url }}")
+                br
+                a(href="{{ restaurant.url }}") Yelp Website
