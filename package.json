@@ -30,6 +30,7 @@
     "grunt-express": "^1.4.1",
     "grunt-open": "^0.2.3",
     "grunt-shell": "^1.1.2",
-    "jshint": "^2.8.0"
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.1"
   }
 }
