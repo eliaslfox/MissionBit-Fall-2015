@@ -5,7 +5,7 @@ angular.module("getMeFood").service("api", [function() {
             method: "GET",
             data: data,
             complete: callback
-        })
+        });
     };
     this.yelp = function(location, term, callback) {
       apiSearch("/test", {

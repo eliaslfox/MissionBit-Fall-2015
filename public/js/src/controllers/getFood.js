@@ -9,7 +9,7 @@ angular.module("getMeFood")
                     return result.data;
                 });
         }
-    }
+    };
 })
 .controller("getFood", ["$scope", "myService", function($scope, myService) {
         myService.getFoos().then(function(foos) {
