@@ -1,6 +1,18 @@
-angular.module("getMeFood").controller("getFood", ["$scope", "yelp", function($scope, yelp) {
-        yelp.search("San Francisco", "Tacos", function(data) {
-            $scope.restaurants = data;
-            console.log($scope.restaurants);
+angular.module("getMeFood")
+.factory('myService', function($http) {
+    return {
+        getFoos: function() {
+            //return the promise directly.
+            return $http.get('/test')
+                .then(function(result) {
+                    //resolve the promise as the data
+                    return result.data;
+                });
+        }
+    }
+})
+.controller("getFood", ["$scope", "myService", function($scope, myService) {
+        myService.getFoos().then(function(foos) {
+            $scope.restaurants = foos;
         });
     }]);
