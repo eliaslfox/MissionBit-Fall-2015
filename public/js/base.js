@@ -11,7 +11,7 @@ var getFood = function() {
         },
         success: function(data) {
             var each = data.businesses;
-            $(".jumbotron").hide()
+            $(".jumbotron").hide();
             for (i=0; i<3; i++) {
                 $('#resturants').append("<div class='col-md-4'><div class='panel panel-default' id='food" +i+ "'></div></div>");
                 $("#food"+i).append("<div class='panel-heading'> <h3 class='panel-title'>" +each[i].name+ "</h3></div>");
@@ -19,7 +19,8 @@ var getFood = function() {
                 $("#foodBody"+i).prepend("<img src='" +each[i].rating_img_url+ "' /><br />");
                 $("#foodBody"+i).prepend("<img src='" +each[i].image_url+ "' /><br />");
                 $("#foodBody"+i).append("<p><a href=" +each[i].url+">Yelp Site</a></p>");
-            };
+                $("#foodBody"+i).append("<p><a href='https://www.google.com/maps?saddr=My+Location&daddr="+each[i].location.display_address[0]+"'>Google Maps Directions</a></p>");
+            }
         },
     });
 };

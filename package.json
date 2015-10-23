@@ -18,6 +18,7 @@
   "homepage": "https://github.com/eliaslfox/MissionBit-Fall-2015",
   "dependencies": {
     "body-parser": "^1.14.1",
+    "bower": "^1.5.3",
     "cookie-parser": "^1.4.0",
     "debug": "^2.2.0",
     "express": "^4.13.3",
