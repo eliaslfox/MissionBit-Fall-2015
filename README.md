@@ -1,29 +1,42 @@
-# MissionBit-Fall-2015
+# Get Me Food
 
-My project for Mission Bit, Fall 2015 demo day.
+An app for finding restaurants.
 
-## Build
+## Setup
+
+Install dependencies
 
 ```shell
 npm install
-npm install mongod -g
+bower install
+```
+
+Create a config.js file in the project route
+
+```javascript
+module.exports = {
+    yelp: {
+        Consumer_Key: "Your Data Here",
+        Consumer_Secret: "Your Data Here",
+        Token: "Your Data Here",
+        Token_Secret: "Your Data Here"
+    }
+};
 ```
 
 ## Usage
+
+Build the project
+
 ```shell
-sudo mongod
+grunt build
+```
+
+Start the project
+
+```
 grunt
 ```
 
-## Features
-
-### Yelp
-**Note** For yelp to work it needs a config file.
-```shell
-curl localhost:3000/yelp/search?location=SF
-```
-
-### Passport
-Visit location:3000/passport to use.
-
-**Note** Api access to passport coming soon.
+## Issues
+Please leave bugs on the github issues page.
