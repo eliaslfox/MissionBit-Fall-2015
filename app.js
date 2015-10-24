@@ -39,5 +39,13 @@ app.get('/test', function(req, res) {
 //Yelp Api
 app.use('/api', apiRoute);
 
+/*
+* Testing
+ */
+
+app.get("/map", function(req, res) {
+   res.sendFile(__dirname+"/views/maps.html");
+});
+
 //Export the app object
 module.exports = app;

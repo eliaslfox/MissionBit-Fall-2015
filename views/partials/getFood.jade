@@ -1,4 +1,5 @@
 div(ng-controller="getFood").container
+    script(async, defer, src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMB8CVfZFT9aMflHSQ8Gb04m58qcSUI8c&callback=initMap")
 
     div(ng-show="mode == 'INPUT'").jumbotron
         form
@@ -19,3 +20,8 @@ div(ng-controller="getFood").container
                 img(src="{{ restaurant.image_url }}")
                 br
                 a(href="{{ restaurant.url }}") Yelp Website
+                br
+                a(href="https://maps.google.com?saddr=Current+Location&daddr={{ restaurant.location.display_address[0]}}") Directions
+
+    div
+        #map
