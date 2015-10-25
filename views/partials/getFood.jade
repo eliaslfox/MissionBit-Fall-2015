@@ -1,27 +1,34 @@
 div(ng-controller="getFood").container
-    script(async, defer, src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMB8CVfZFT9aMflHSQ8Gb04m58qcSUI8c&callback=initMap")
 
     div(ng-show="mode == 'SEARCH'").jumbotron
-        form
-            input(ng-model="location", placeholder="Location").form-control
-            br
-            input(ng-model="term", placeholder="Search Term").form-control
-            br
-            .centerDiv
-                a.btn.btn-lg.btn-default#getFoodButton(href='#/getFood', role='button', ng-click="search()") Search
+        .input-group.input-group-lg#input
+            input.form-control(type='text', placeholder='Location', ng-model="location")
+            span.input-group-btn
+                button.btn.btn-default(type='button', ng-click="findMe()") Find Me
+
+        .input-group.input-group-lg#input
+            input.form-control(type='text', aria-label='...', placeholder="Food", ng-model="term")
+            .input-group-btn
+                button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    | Find Food
+                    span.caret
+                ul.dropdown-menu.dropdown-menu-right
+                    li
+                        a() Find Food
+                    li(ng-repeat="food in foods")
+                        a(ng-click="findFood($index)") {{ food }}
+
+        button.btn.btn-default.btn-primary(type="button", ng-click="search()") Search
+
 
     div(ng-repeat="restaurant in restaurants | limitTo:3" ng-show="mode == 'LIST'")
-        div.panel.panel-default
+        div.panel.panel-default(ng-init="genDirectionsLink(restaurant.location.display_address[0], $index)")
             div.panel-heading
                 h3 {{ restaurant.name }}
             div.panel-body
                 img(src="{{ restaurant.rating_img_url }}")
                 br
-                img(src="{{ restaurant.image_url }}")
+                img(src="{{ restaurant.image_url }}")#input
                 br
-                a(href="{{ restaurant.url }}") Yelp Website
-                br
-                a(href="{{ restaurant.directionsLink }}", ng-init="genDirectionsLink(restaurant.location.display_address[0], $index)") Directions
-
-    div
-        #map
+                button.btn.btn-default
+                    a(href="{{selectRestaurant($index)}}") Take Me Here

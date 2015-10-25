@@ -8,6 +8,7 @@ html(lang='en')
         title Get Me Food
         meta(name='description', content='An app for finding restaurants.')
         meta(name='author', content='Elias Lawson-Fox')
+        base(href="/")
         //Styles
         link(rel="stylesheet", type="text/css", href="/bower_components/bootstrap/dist/css/bootstrap.min.css")
         link(href='/css/jumbotron-narrow.css', rel='stylesheet')
@@ -17,6 +18,7 @@ html(lang='en')
         script(src="/bower_components/angular-route/angular-route.min.js")
         script(src="/bower_components/jquery/dist/jquery.min.js")
         script(src="/bower_components/bootstrap/dist/js/bootstrap.min.js")
+        script(src="http://maps.google.com/maps/api/js?sensor=true")
         //Scripts
         script(src="/js/src/main.js")
         script(src="/js/src/routes.js")
@@ -26,6 +28,7 @@ html(lang='en')
         script(src="/js/src/controllers/nav.js")
         script(src="/js/src/controllers/home.js")
         script(src="/js/src/controllers/getFood.js")
+        script(src="/js/src/controllers/viewRestaurant.js")
 
     body(ng-app="getMeFood")
     .container(ng-controller="nav")
@@ -33,11 +36,12 @@ html(lang='en')
             nav
                 ul.nav.nav-pills.pull-right#nav-bar
                     li(role='presentation', ng-click="updateActive('home')", id="home")
-                        a(href='#/') Home
+                        a(href='/') Home
                     li(role='presentation', ng-click="updateActive('getFood')", id="getFood")
-                        a(href='#/getFood') Get Food
+                        a(href='/getFood') Get Food
             h3.text-muted Get Me Food
         div(ng-view)
         footer.footer
-            p Elias Lawson-Fox (2015)
-                a(href="http://github.com/eliaslfox") @eliaslfox
+            p
+                a(href="http://github.com/eliaslfox") Elias Lawson-Fox
+                span 2015

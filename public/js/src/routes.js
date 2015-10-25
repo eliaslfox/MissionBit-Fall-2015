@@ -1,5 +1,5 @@
-angular.module("getMeFood").config(['$routeProvider',
-    function($routeProvider) {
+angular.module("getMeFood").config(['$routeProvider', "$locationProvider",
+    function($routeProvider, $locationProvider) {
         $routeProvider.
             when('/', {
                 templateUrl: 'partials/home.jade',
@@ -14,5 +14,10 @@ angular.module("getMeFood").config(['$routeProvider',
             }).
             otherwise({
                 redirectTo: '/'
+            })
+            .when('/viewRestaurant/:id', {
+                templateUrl: 'partials/viewRestaurant.jade',
+                controller: 'viewRestaurant'
             });
+        $locationProvider.html5Mode(true);
     }]);

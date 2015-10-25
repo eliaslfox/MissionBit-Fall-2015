@@ -1,0 +1,12 @@
+div(ng-controller="viewRestaurant", ng-show="ready")
+    div.panel.panel-default
+        div.panel-heading
+            h3 {{ restaurant.name }}
+        div.panel-body
+            img(src="{{ restaurant.rating_img_url }}")
+            br
+            img(src="{{ restaurant.image_url }}")
+            br
+            a(href="{{ restaurant.url }}") Yelp Website
+            br
+            a(href="{{ restaurant.directionsLink }}") Directions

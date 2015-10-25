@@ -15,4 +15,10 @@ router.get("/search", function(req, res) {
     });
 });
 
+router.get("/get", function(req, res) {
+    yelp.business(req.query.id, function(error, data) {
+        res.json(data);
+    });
+});
+
 module.exports = router;
