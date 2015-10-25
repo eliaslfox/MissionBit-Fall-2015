@@ -3,6 +3,10 @@ body {
     padding-bottom: 20px;
 }
 
-#input {
+.spacing {
     padding-bottom: 20px;
+}
+#map {
+    height: 300px;
+    width: 300px;
 }

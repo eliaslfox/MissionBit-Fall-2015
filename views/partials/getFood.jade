@@ -1,12 +1,12 @@
 div(ng-controller="getFood").container
 
     div(ng-show="mode == 'SEARCH'").jumbotron
-        .input-group.input-group-lg#input
+        .input-group.input-group-lg.spacing
             input.form-control(type='text', placeholder='Location', ng-model="location")
             span.input-group-btn
                 button.btn.btn-default(type='button', ng-click="findMe()") Find Me
 
-        .input-group.input-group-lg#input
+        .input-group.input-group-lg.spacing
             input.form-control(type='text', aria-label='...', placeholder="Food", ng-model="term")
             .input-group-btn
                 button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
@@ -28,7 +28,7 @@ div(ng-controller="getFood").container
             div.panel-body
                 img(src="{{ restaurant.rating_img_url }}")
                 br
-                img(src="{{ restaurant.image_url }}")#input
+                img(src="{{ restaurant.image_url }}").spacing
                 br
-                button.btn.btn-default
-                    a(href="{{selectRestaurant($index)}}") Take Me Here
+                a(href="{{selectRestaurant($index)}}")
+                    button.btn.btn-default Take Me Here

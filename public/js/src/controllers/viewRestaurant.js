@@ -7,4 +7,11 @@ angular.module("getMeFood").controller("viewRestaurant", ["$scope", "$routeParam
             $scope.restaurant.directionsLink = data;
         })
     });
+    $scope.genMap = function() {
+        gMaps.findLocation(function(data) {
+            $scope.from = data;
+            gMaps.genMap("map", $scope.from, $scope.restaurant.location.display_address[0]+ ", "+$scope.restaurant.location.city);
+            $scope.$apply();
+        });
+    };
 }]);

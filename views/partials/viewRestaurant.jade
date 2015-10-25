@@ -1,4 +1,4 @@
-div(ng-controller="viewRestaurant", ng-show="ready")
+div(ng-controller="viewRestaurant", ng-show="ready", ng-init="genMap()")
     div.panel.panel-default
         div.panel-heading
             h3 {{ restaurant.name }}
@@ -7,6 +7,7 @@ div(ng-controller="viewRestaurant", ng-show="ready")
             br
             img(src="{{ restaurant.image_url }}")
             br
-            a(href="{{ restaurant.url }}") Yelp Website
-            br
-            a(href="{{ restaurant.directionsLink }}") Directions
+            a(href="{{ restaurant.url }}").spacing Yelp Website
+            div#map.spacing
+            a(href="{{ restaurant.directionsLink }}")
+                button.btn.btn-default Directions
