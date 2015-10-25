@@ -23,17 +23,18 @@ html(lang='en')
         script(src="/js/src/services/api.js")
         script(src="/js/src/services/yelp.js")
         script(src="/js/src/services/gMaps.js")
+        script(src="/js/src/controllers/nav.js")
         script(src="/js/src/controllers/home.js")
         script(src="/js/src/controllers/getFood.js")
 
     body(ng-app="getMeFood")
-    .container
-        .header.clearfix
+    .container(ng-controller="nav")
+        div.header.clearfix
             nav
-                ul.nav.nav-pills.pull-right
-                    li.active(role='presentation')
+                ul.nav.nav-pills.pull-right#nav-bar
+                    li(role='presentation', ng-click="updateActive('home')", id="home")
                         a(href='#/') Home
-                    li(role='presentation')
+                    li(role='presentation', ng-click="updateActive('getFood')", id="getFood")
                         a(href='#/getFood') Get Food
             h3.text-muted Get Me Food
         div(ng-view)

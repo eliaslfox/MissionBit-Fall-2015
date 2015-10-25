@@ -1,5 +1,6 @@
 angular.module("getMeFood")
     .controller("getFood", ["$scope", "yelp", "gMaps", function($scope, yelp, gMaps) {
+        $scope.updateActive("getFood");
         $scope.mode = "SEARCH";
         $scope.search = function() {
             $scope.mode= "LIST";
