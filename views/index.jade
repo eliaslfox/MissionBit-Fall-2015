@@ -3,11 +3,10 @@ html(lang='en')
     head
         //Meta Base
         meta(charset='utf-8')
-        meta(http-equiv='X-UA-Compatible', content='IE=edge')
         meta(name='viewport', content='width=device-width, initial-scale=1')
         //Meta Data
         title Get Me Food
-        meta(name='description', content='')
+        meta(name='description', content='An app for finding restaurants.')
         meta(name='author', content='Elias Lawson-Fox')
         //Styles
         link(rel="stylesheet", type="text/css", href="/bower_components/bootstrap/dist/css/bootstrap.min.css")
@@ -23,9 +22,8 @@ html(lang='en')
         script(src="/js/src/routes.js")
         script(src="/js/src/services/api.js")
         script(src="/js/src/services/yelp.js")
-        script(src="/js/src/controllers/double.js")
+        script(src="/js/src/services/gMaps.js")
         script(src="/js/src/controllers/home.js")
-        script(src="/js/src/controllers/spicy.js")
         script(src="/js/src/controllers/getFood.js")
 
     body(ng-app="getMeFood")
@@ -40,4 +38,5 @@ html(lang='en')
             h3.text-muted Get Me Food
         div(ng-view)
         footer.footer
-            p Elias Lawson-Fox 2015
+            p Elias Lawson-Fox (2015)
+                a(href="http://github.com/eliaslfox") @eliaslfox

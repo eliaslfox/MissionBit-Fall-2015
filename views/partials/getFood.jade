@@ -1,7 +1,7 @@
 div(ng-controller="getFood").container
     script(async, defer, src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMB8CVfZFT9aMflHSQ8Gb04m58qcSUI8c&callback=initMap")
 
-    div(ng-show="mode == 'INPUT'").jumbotron
+    div(ng-show="mode == 'SEARCH'").jumbotron
         form
             input(ng-model="location", placeholder="Location").form-control
             br
@@ -10,7 +10,7 @@ div(ng-controller="getFood").container
             .centerDiv
                 a.btn.btn-lg.btn-default#getFoodButton(href='#/getFood', role='button', ng-click="search()") Search
 
-    div(ng-repeat="restaurant in restaurants | limitTo:3" ng-show="mode == 'OUTPUT'")
+    div(ng-repeat="restaurant in restaurants | limitTo:3" ng-show="mode == 'LIST'")
         div.panel.panel-default
             div.panel-heading
                 h3 {{ restaurant.name }}
@@ -21,7 +21,7 @@ div(ng-controller="getFood").container
                 br
                 a(href="{{ restaurant.url }}") Yelp Website
                 br
-                a(href="https://maps.google.com?saddr=Current+Location&daddr={{ restaurant.location.display_address[0]}}") Directions
+                a(href="{{ restaurant.directionsLink }}", ng-init="genDirectionsLink(restaurant.location.display_address[0], $index)") Directions
 
     div
         #map
