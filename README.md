@@ -9,6 +9,7 @@ Install dependencies
 ```shell
 npm install
 bower install
+grunt build
 ```
 
 Create a config.js file in the project route
@@ -20,19 +21,15 @@ module.exports = {
         Consumer_Secret: "Your Data Here",
         Token: "Your Data Here",
         Token_Secret: "Your Data Here"
+    },
+    insta: {
+            client_id: 'Your Data Here',
+            client_secret: 'Your Data Here'
     }
 };
 ```
 
 ## Usage
-
-Build the project
-
-```shell
-grunt build
-```
-
-Start the project
 
 ```
 grunt
