@@ -7,7 +7,7 @@ angular.module("getMeFood").controller("viewRestaurant", ["$scope", "$routeParam
         $scope.ready = true;
         gMaps.genDirectionsLink("Current Location", $scope.restaurant.location.display_address[0], null, function(data) {
             $scope.restaurant.directionsLink = data;
-        })
+        });
     });
     $scope.genMap = function() {
         $scope.mapGenned = true;

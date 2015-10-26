@@ -9,12 +9,33 @@ var yelp = require("yelp").createClient({
     token_secret: config.Token_Secret
 });
 
+/**
+ * @api {get} /api/yelp/search Search businesses on yelp.
+ * @apiName SearchYelp
+ * @apiGroup Yelp
+ *
+ * @apiParam {String} term Search term.
+ * @apiParam {Number} location Location information.
+ *
+ * @apiSuccess {Array} result The JSON data returned from yelp.
+ *
+ */
 router.get("/search", function(req, res) {
     yelp.search({term: req.query.term, location: req.query.location, limit: 5}, function(error, data) {
         res.json(data);
     });
 });
 
+/**
+ * @api {get} /api/yelp/search Get data on a business.
+ * @apiName GetYelp
+ * @apiGroup Yelp
+ *
+ * @apiParam {String} id The business' id.
+ *
+ * @apiSuccess {Array} result The JSON data returned from yelp.
+ *
+ */
 router.get("/get", function(req, res) {
     yelp.business(req.query.id, function(error, data) {
         res.json(data);

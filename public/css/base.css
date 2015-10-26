@@ -10,3 +10,6 @@ body {
     height: 300px;
     width: 300px;
 }
+.footerText {
+    margin-right: 0.5em;
+}

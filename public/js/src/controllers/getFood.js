@@ -30,5 +30,5 @@ angular.module("getMeFood")
         };
         $scope.selectRestaurant = function(index) {
             return "/viewRestaurant/"+ $scope.restaurants[index].id;
-        }
+        };
     }]);

@@ -12,6 +12,7 @@ var app = express();
 //Public Directories
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bower_components', express.static(path.join(__dirname, 'bower_components')));
+app.use('/apidoc', express.static(path.join(__dirname, 'apidoc')));
 
 //Jade
 app.set('view engine', 'jade');
@@ -38,14 +39,6 @@ app.get('/test', function(req, res) {
 
 //Yelp Api
 app.use('/api', apiRoute);
-
-/*
-* Testing
- */
-
-app.get("/map", function(req, res) {
-   res.sendFile(__dirname+"/views/maps.html");
-});
 
 //Export the app object
 module.exports = app;

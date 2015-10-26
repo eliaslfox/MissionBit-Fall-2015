@@ -10,7 +10,7 @@ angular.module("getMeFood")
         get: function(id) {
             return api.get('/api/yelp/get?id='+id)
                 .then(function(result) {
-                    return result
+                    return result;
                 });
         }
     };

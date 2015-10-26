@@ -11,6 +11,17 @@ function roundNumber (value, decimals) {
     return Math.round(value * p) / p;
 }
 
+/**
+ * @api {get} /api/insta/show Show queried instagram posts.
+ * @apiName ShowInstagram
+ * @apiGroup Instagram
+ *
+ * @apiParam {Number} lat Latitude of Selected Location
+ * @apiParam {Number} lng Longitude of Selected Location
+ *
+ * @apiSuccess {Array} result The JSON data returned from instagram.
+ *
+ */
 router.get("/show", function(req, res) {
     ig.location_search({ lat: roundNumber(req.query.lat, 19), lng: roundNumber(req.query.lng, 19) }, function(err, result, remaining, limit) {
         var id = result[0].id;
