@@ -1,13 +1,27 @@
-div(ng-controller="viewRestaurant", ng-show="ready", ng-init="genMap()")
+div(ng-controller="viewRestaurant", ng-show="ready")
     div.panel.panel-default
         div.panel-heading
             h3 {{ restaurant.name }}
         div.panel-body
             img(src="{{ restaurant.rating_img_url }}")
             br
-            img(src="{{ restaurant.image_url }}")
+            img(src="{{ restaurant.image_url }}").spacing
             br
-            a(href="{{ restaurant.url }}").spacing Yelp Website
+            .btn-group(role='group', aria-label='...')
+                button.btn.btn-default(type='button', ng-click="goToPage(restraunt.url)") Yelp Website
+                button.btn.btn-default(type='button', ng-click="genMap()", ng-hide="mapGenned") Show Map
+                button.btn.btn-default(type='button', ng-click="genInsta()", ng-hide="instaGenned") Show Instagram Feed
+                button.btn.btn-default(ng-click="goToPage(restaurant.directionsLink)") Directions
+
+    div.panel.panel-default(ng-show="mapGenned")
+        div.panel-heading
+            h3 Map
+        div.panel-body
             div#map.spacing
-            a(href="{{ restaurant.directionsLink }}")
-                button.btn.btn-default Directions
+
+    div.panel.panel-default(ng-show="instaGenned")
+        div.panel-heading
+            h3 Instagram Posts
+        div.panel-body
+            div(ng-repeat="url in instaData")
+                img(src="{{url}}")

@@ -21,6 +21,7 @@
     "express": "^4.13.3",
     "instagram-node": "^0.5.8",
     "jade": "^1.11.0",
+    "math": "0.0.3",
     "yelp": "^0.2.0"
   },
   "devDependencies": {
