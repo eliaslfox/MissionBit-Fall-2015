@@ -14,6 +14,8 @@ var yelp = require("yelp").createClient({
  * @apiName SearchYelp
  * @apiGroup Yelp
  *
+ *
+ * @apiVersion 1.0.0
  * @apiParam {String} term Search term.
  * @apiParam {Number} location Location information.
  *
@@ -30,6 +32,8 @@ router.get("/search", function(req, res) {
  * @api {get} /api/yelp/search Get data on a business.
  * @apiName GetYelp
  * @apiGroup Yelp
+ *
+ * @apiVersion 1.0.0
  *
  * @apiParam {String} id The business' id.
  *

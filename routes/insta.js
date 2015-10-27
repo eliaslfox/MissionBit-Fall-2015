@@ -16,6 +16,8 @@ function roundNumber (value, decimals) {
  * @apiName ShowInstagram
  * @apiGroup Instagram
  *
+ *@apiVersion 1.0.0
+ *
  * @apiParam {Number} lat Latitude of Selected Location
  * @apiParam {Number} lng Longitude of Selected Location
  *

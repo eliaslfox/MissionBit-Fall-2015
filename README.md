@@ -2,6 +2,10 @@
 
 An app for finding restaurants.
 
+## Server
+
+The app is running live [here](http://getmefood.xyz/).
+
 ## Setup
 
 Install dependencies
