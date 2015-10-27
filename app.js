@@ -1,6 +1,7 @@
 //Dependencies
 var express = require('express');
 var path = require("path");
+var morgan = require("morgan");
 
 //Create the app
 var app = express();
@@ -8,6 +9,8 @@ var app = express();
 /*
 * Middle Ware
 */
+
+app.use(morgan('combined'));
 
 //Public Directories
 app.use(express.static(path.join(__dirname, 'public')));
