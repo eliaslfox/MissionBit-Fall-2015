@@ -2,4 +2,6 @@ node_modules/*
 npm-debug.log
 config.js
 apidoc/*
+/logs/errors.log
+/logs/logs.log
 bower_components/*

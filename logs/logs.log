@@ -1,0 +1,238 @@
+{"level":"info","message":"Logger setup","timestamp":"2015-10-27T20:09:23.452Z"}
+{"level":"debug","message":"\u001b[0mGET / \u001b[36m304 \u001b[0m487.008 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.606Z"}
+{"level":"debug","message":"\u001b[0mGET /css/jumbotron-narrow.css \u001b[36m304 \u001b[0m5.503 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.764Z"}
+{"level":"debug","message":"\u001b[0mGET /css/base.css \u001b[36m304 \u001b[0m5.303 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.766Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/css/bootstrap.min.css \u001b[36m304 \u001b[0m7.928 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.769Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular-route/angular-route.min.js \u001b[36m304 \u001b[0m10.900 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.771Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular/angular.min.js \u001b[36m304 \u001b[0m10.999 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.772Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/jquery/dist/jquery.min.js \u001b[36m304 \u001b[0m9.819 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.772Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/js/bootstrap.min.js \u001b[36m304 \u001b[0m2.873 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.774Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/api.js \u001b[36m304 \u001b[0m1.832 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.775Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/routes.js \u001b[36m304 \u001b[0m1.466 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.775Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/gMaps.js \u001b[36m304 \u001b[0m1.625 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.775Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/yelp.js \u001b[36m304 \u001b[0m1.303 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.777Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/main.js \u001b[36m304 \u001b[0m1.416 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.777Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/insta.js \u001b[36m304 \u001b[0m1.338 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.780Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/nav.js \u001b[36m304 \u001b[0m2.195 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.781Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/home.js \u001b[36m304 \u001b[0m2.364 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.781Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/getFood.js \u001b[36m304 \u001b[0m1.949 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.783Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/viewRestaurant.js \u001b[36m304 \u001b[0m0.972 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:24.783Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/home.jade \u001b[36m304 \u001b[0m10.838 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:09:25.036Z"}
+{"level":"info","message":"Logger setup","timestamp":"2015-10-27T20:10:07.820Z"}
+{"level":"debug","message":"\u001b[0mGET / \u001b[36m304 \u001b[0m459.737 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:08.919Z"}
+{"level":"debug","message":"\u001b[0mGET /css/jumbotron-narrow.css \u001b[36m304 \u001b[0m4.946 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.022Z"}
+{"level":"debug","message":"\u001b[0mGET /css/base.css \u001b[36m304 \u001b[0m5.755 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.023Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/css/bootstrap.min.css \u001b[36m304 \u001b[0m8.744 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.024Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular/angular.min.js \u001b[36m304 \u001b[0m7.002 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.025Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular-route/angular-route.min.js \u001b[36m304 \u001b[0m6.633 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.025Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/main.js \u001b[36m304 \u001b[0m1.777 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.029Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/routes.js \u001b[36m304 \u001b[0m1.978 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.029Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/api.js \u001b[36m304 \u001b[0m1.998 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.030Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/yelp.js \u001b[36m304 \u001b[0m2.145 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.030Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/jquery/dist/jquery.min.js \u001b[36m304 \u001b[0m4.280 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.030Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/js/bootstrap.min.js \u001b[36m304 \u001b[0m4.309 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.031Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/gMaps.js \u001b[36m304 \u001b[0m1.262 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.033Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/insta.js \u001b[36m304 \u001b[0m1.405 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.033Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/nav.js \u001b[36m304 \u001b[0m0.530 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.035Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/home.js \u001b[36m304 \u001b[0m2.492 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.036Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/getFood.js \u001b[36m304 \u001b[0m1.374 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.037Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/viewRestaurant.js \u001b[36m304 \u001b[0m1.357 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.037Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/home.jade \u001b[36m304 \u001b[0m8.023 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:09.229Z"}
+{"level":"info","message":"Logger setup","timestamp":"2015-10-27T20:10:30.947Z"}
+{"level":"debug","message":"\u001b[0mGET / \u001b[36m304 \u001b[0m485.436 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:31.936Z"}
+{"level":"debug","message":"\u001b[0mGET /css/jumbotron-narrow.css \u001b[36m304 \u001b[0m5.038 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.036Z"}
+{"level":"debug","message":"\u001b[0mGET /css/base.css \u001b[36m304 \u001b[0m5.886 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.037Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/css/bootstrap.min.css \u001b[36m304 \u001b[0m8.443 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.037Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular-route/angular-route.min.js \u001b[36m304 \u001b[0m6.605 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.039Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular/angular.min.js \u001b[36m304 \u001b[0m5.666 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.039Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/jquery/dist/jquery.min.js \u001b[36m304 \u001b[0m5.677 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.040Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/main.js \u001b[36m304 \u001b[0m0.269 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.040Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/routes.js \u001b[36m304 \u001b[0m3.765 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.045Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/yelp.js \u001b[36m304 \u001b[0m1.865 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.046Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/api.js \u001b[36m304 \u001b[0m1.965 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.046Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/insta.js \u001b[36m304 \u001b[0m1.999 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.046Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/gMaps.js \u001b[36m304 \u001b[0m2.015 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.047Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/js/bootstrap.min.js \u001b[36m304 \u001b[0m6.469 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.047Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/nav.js \u001b[36m304 \u001b[0m0.633 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.052Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/home.js \u001b[36m304 \u001b[0m12.389 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.066Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/getFood.js \u001b[36m304 \u001b[0m1.250 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.066Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/viewRestaurant.js \u001b[36m304 \u001b[0m1.010 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.066Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/home.jade \u001b[36m304 \u001b[0m5.837 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:10:32.267Z"}
+{"level":"info","message":"Logger setup","timestamp":"2015-10-27T20:13:48.246Z"}
+{"level":"debug","message":"\u001b[0mGET / \u001b[36m304 \u001b[0m424.989 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.404Z"}
+{"level":"debug","message":"\u001b[0mGET /css/jumbotron-narrow.css \u001b[36m304 \u001b[0m4.252 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.550Z"}
+{"level":"debug","message":"\u001b[0mGET /css/base.css \u001b[36m304 \u001b[0m4.938 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.551Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/css/bootstrap.min.css \u001b[36m304 \u001b[0m8.019 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.552Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular/angular.min.js \u001b[36m304 \u001b[0m6.007 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.552Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular-route/angular-route.min.js \u001b[36m304 \u001b[0m1.691 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.555Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/jquery/dist/jquery.min.js \u001b[36m304 \u001b[0m1.772 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.555Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/js/bootstrap.min.js \u001b[36m304 \u001b[0m0.595 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.558Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/main.js \u001b[36m304 \u001b[0m3.199 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.570Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/routes.js \u001b[36m304 \u001b[0m3.439 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.570Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/api.js \u001b[36m304 \u001b[0m3.377 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.571Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/yelp.js \u001b[36m304 \u001b[0m2.915 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.571Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/gMaps.js \u001b[36m304 \u001b[0m3.591 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.572Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/nav.js \u001b[36m304 \u001b[0m0.835 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.573Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/insta.js \u001b[36m304 \u001b[0m0.615 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.575Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/home.js \u001b[36m304 \u001b[0m14.826 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.591Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/getFood.js \u001b[36m304 \u001b[0m1.036 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.593Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/viewRestaurant.js \u001b[36m304 \u001b[0m1.850 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.594Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/main.js \u001b[36m304 \u001b[0m0.492 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.745Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/routes.js \u001b[36m304 \u001b[0m0.253 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.748Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/api.js \u001b[36m304 \u001b[0m0.271 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.752Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/yelp.js \u001b[36m304 \u001b[0m0.321 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.756Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/gMaps.js \u001b[36m304 \u001b[0m0.263 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.760Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/insta.js \u001b[36m304 \u001b[0m0.245 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.764Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/nav.js \u001b[36m304 \u001b[0m0.304 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.768Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/home.js \u001b[36m304 \u001b[0m0.385 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.887Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/getFood.js \u001b[36m304 \u001b[0m0.262 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.891Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/viewRestaurant.js \u001b[36m304 \u001b[0m0.277 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.896Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/home.jade \u001b[36m304 \u001b[0m9.019 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:13:49.978Z"}
+{"level":"info","message":"Logger setup","timestamp":"2015-10-27T20:14:32.275Z"}
+{"level":"debug","message":"\u001b[0mGET / \u001b[36m304 \u001b[0m484.521 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.302Z"}
+{"level":"debug","message":"\u001b[0mGET /css/jumbotron-narrow.css \u001b[36m304 \u001b[0m10.448 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.410Z"}
+{"level":"debug","message":"\u001b[0mGET /css/base.css \u001b[36m304 \u001b[0m9.408 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.411Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/css/bootstrap.min.css \u001b[36m304 \u001b[0m11.074 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.413Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular-route/angular-route.min.js \u001b[36m304 \u001b[0m10.767 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.413Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/jquery/dist/jquery.min.js \u001b[36m304 \u001b[0m10.388 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.414Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular/angular.min.js \u001b[36m304 \u001b[0m1.965 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.414Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/js/bootstrap.min.js \u001b[36m304 \u001b[0m0.612 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.416Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/main.js \u001b[36m304 \u001b[0m0.933 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.419Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/api.js \u001b[36m304 \u001b[0m1.077 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.419Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/gMaps.js \u001b[36m304 \u001b[0m1.608 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.420Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/routes.js \u001b[36m304 \u001b[0m1.710 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.421Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/insta.js \u001b[36m304 \u001b[0m1.627 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.422Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/nav.js \u001b[36m304 \u001b[0m1.078 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.423Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/home.js \u001b[36m304 \u001b[0m1.033 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.423Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/yelp.js \u001b[36m304 \u001b[0m10.654 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.435Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/getFood.js \u001b[36m304 \u001b[0m0.759 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.435Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/viewRestaurant.js \u001b[36m304 \u001b[0m0.570 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.437Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/main.js \u001b[36m304 \u001b[0m0.303 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.548Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/routes.js \u001b[36m304 \u001b[0m0.285 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.552Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/api.js \u001b[36m304 \u001b[0m0.594 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.556Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/yelp.js \u001b[36m304 \u001b[0m0.238 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.559Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/gMaps.js \u001b[36m304 \u001b[0m0.307 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.563Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/insta.js \u001b[36m304 \u001b[0m0.322 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.567Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/nav.js \u001b[36m304 \u001b[0m0.310 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.572Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/home.js \u001b[36m304 \u001b[0m0.324 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.627Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/getFood.js \u001b[36m304 \u001b[0m0.274 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.631Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/viewRestaurant.js \u001b[36m304 \u001b[0m0.396 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.636Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/home.jade \u001b[36m304 \u001b[0m8.061 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:33.693Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/getFood.jade \u001b[36m304 \u001b[0m35.923 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:36.394Z"}
+{"level":"debug","message":"\u001b[0mGET /%7B%7B%20restaurant.rating_img_url%20%7D%7D \u001b[33m404 \u001b[0m4.017 ms - 56\u001b[0m\n","timestamp":"2015-10-27T20:14:36.429Z"}
+{"level":"debug","message":"\u001b[0mGET /%7B%7B%20restaurant.image_url%20%7D%7D \u001b[33m404 \u001b[0m3.183 ms - 51\u001b[0m\n","timestamp":"2015-10-27T20:14:36.429Z"}
+{"level":"info","message":"Logger setup","timestamp":"2015-10-27T20:14:53.306Z"}
+{"level":"debug","message":"\u001b[0mGET / \u001b[36m304 \u001b[0m481.802 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.249Z"}
+{"level":"debug","message":"\u001b[0mGET /css/jumbotron-narrow.css \u001b[36m304 \u001b[0m10.855 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.347Z"}
+{"level":"debug","message":"\u001b[0mGET /css/base.css \u001b[36m304 \u001b[0m11.476 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.348Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/css/bootstrap.min.css \u001b[36m304 \u001b[0m14.603 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.349Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular/angular.min.js \u001b[36m304 \u001b[0m13.317 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.350Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular-route/angular-route.min.js \u001b[36m304 \u001b[0m13.344 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.350Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/jquery/dist/jquery.min.js \u001b[36m304 \u001b[0m1.497 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.351Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/main.js \u001b[36m304 \u001b[0m1.556 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.356Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/routes.js \u001b[36m304 \u001b[0m1.843 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.357Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/api.js \u001b[36m304 \u001b[0m2.003 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.357Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/yelp.js \u001b[36m304 \u001b[0m2.094 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.357Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/js/bootstrap.min.js \u001b[36m304 \u001b[0m4.290 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.358Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/gMaps.js \u001b[36m304 \u001b[0m1.242 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.360Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/insta.js \u001b[36m304 \u001b[0m4.994 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.364Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/nav.js \u001b[36m304 \u001b[0m5.115 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.376Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/home.js \u001b[36m304 \u001b[0m13.265 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.376Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/getFood.js \u001b[36m304 \u001b[0m13.153 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.376Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/viewRestaurant.js \u001b[36m304 \u001b[0m13.282 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.377Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/home.jade \u001b[36m304 \u001b[0m5.081 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:54.551Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/getFood.jade \u001b[36m304 \u001b[0m38.489 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:14:55.357Z"}
+{"level":"debug","message":"\u001b[0mGET /%7B%7B%20restaurant.rating_img_url%20%7D%7D \u001b[33m404 \u001b[0m2.175 ms - 56\u001b[0m\n","timestamp":"2015-10-27T20:14:55.385Z"}
+{"level":"debug","message":"\u001b[0mGET /%7B%7B%20restaurant.image_url%20%7D%7D \u001b[33m404 \u001b[0m3.073 ms - 51\u001b[0m\n","timestamp":"2015-10-27T20:14:55.386Z"}
+{"term":"Tacos","location":"SF","level":"info","message":"Yelp Search Request","timestamp":"2015-10-27T20:14:59.579Z"}
+{"level":"debug","message":"\u001b[0mGET /api/yelp/search?location=SF&&term=Tacos \u001b[32m200 \u001b[0m738.873 ms - 7975\u001b[0m\n","timestamp":"2015-10-27T20:14:59.581Z"}
+{"level":"info","message":"Logger setup","timestamp":"2015-10-27T20:15:53.148Z"}
+{"level":"debug","message":"\u001b[0mGET / \u001b[36m304 \u001b[0m478.990 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.218Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/css/bootstrap.min.css \u001b[36m304 \u001b[0m5.261 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.335Z"}
+{"level":"debug","message":"\u001b[0mGET /css/jumbotron-narrow.css \u001b[36m304 \u001b[0m0.852 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.337Z"}
+{"level":"debug","message":"\u001b[0mGET /css/base.css \u001b[36m304 \u001b[0m0.437 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.341Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/main.js \u001b[36m304 \u001b[0m1.221 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.346Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular/angular.min.js \u001b[36m304 \u001b[0m3.292 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.346Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular-route/angular-route.min.js \u001b[36m304 \u001b[0m3.322 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.347Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/jquery/dist/jquery.min.js \u001b[36m304 \u001b[0m4.569 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.348Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/js/bootstrap.min.js \u001b[36m304 \u001b[0m4.393 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.348Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/routes.js \u001b[36m304 \u001b[0m0.766 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.349Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/api.js \u001b[36m304 \u001b[0m0.948 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.351Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/yelp.js \u001b[36m304 \u001b[0m7.082 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.358Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/gMaps.js \u001b[36m304 \u001b[0m7.373 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.358Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/insta.js \u001b[36m304 \u001b[0m0.431 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.359Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/nav.js \u001b[36m304 \u001b[0m2.014 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.362Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/home.js \u001b[36m304 \u001b[0m2.163 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.362Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/getFood.js \u001b[36m304 \u001b[0m1.885 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.363Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/viewRestaurant.js \u001b[36m304 \u001b[0m1.878 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.363Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/home.jade \u001b[36m304 \u001b[0m8.915 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:54.608Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/getFood.jade \u001b[36m304 \u001b[0m44.657 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:15:55.371Z"}
+{"level":"debug","message":"\u001b[0mGET /%7B%7B%20restaurant.rating_img_url%20%7D%7D \u001b[33m404 \u001b[0m2.704 ms - 56\u001b[0m\n","timestamp":"2015-10-27T20:15:55.399Z"}
+{"level":"debug","message":"\u001b[0mGET /%7B%7B%20restaurant.image_url%20%7D%7D \u001b[33m404 \u001b[0m3.269 ms - 51\u001b[0m\n","timestamp":"2015-10-27T20:15:55.400Z"}
+{"term":"Tacos","location":"SF","level":"info","message":"Yelp Search Request","timestamp":"2015-10-27T20:16:00.165Z"}
+{"level":"debug","message":"\u001b[0mGET /api/yelp/search?location=SF&&term=Tacos \u001b[36m304 \u001b[0m1376.889 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:16:00.167Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/viewRestaurant.jade \u001b[36m304 \u001b[0m27.134 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:16:05.336Z"}
+{"level":"debug","message":"\u001b[0mGET /%7B%7Burl%7D%7D \u001b[33m404 \u001b[0m0.781 ms - 28\u001b[0m\n","timestamp":"2015-10-27T20:16:05.366Z"}
+{"ID":"mateos-taqueria-san-francisco","level":"info","message":"Yelp Get Request","timestamp":"2015-10-27T20:16:07.146Z"}
+{"level":"debug","message":"\u001b[0mGET /api/yelp/get?id=mateos-taqueria-san-francisco \u001b[32m200 \u001b[0m1788.597 ms - 2189\u001b[0m\n","timestamp":"2015-10-27T20:16:07.148Z"}
+{"ID":"mateos-taqueria-san-francisco","level":"info","message":"Yelp Get Request","timestamp":"2015-10-27T20:16:07.597Z"}
+{"level":"debug","message":"\u001b[0mGET /api/yelp/get?id=mateos-taqueria-san-francisco \u001b[36m304 \u001b[0m437.992 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:16:07.598Z"}
+{"level":"info","message":"Logger setup","timestamp":"2015-10-27T20:18:12.857Z"}
+{"level":"debug","message":"\u001b[0mGET / \u001b[36m304 \u001b[0m452.816 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.038Z"}
+{"level":"debug","message":"\u001b[0mGET /css/jumbotron-narrow.css \u001b[36m304 \u001b[0m2.762 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.155Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/css/bootstrap.min.css \u001b[36m304 \u001b[0m5.811 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.156Z"}
+{"level":"debug","message":"\u001b[0mGET /css/base.css \u001b[36m304 \u001b[0m2.864 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.160Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/main.js \u001b[36m304 \u001b[0m1.679 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.161Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular/angular.min.js \u001b[36m304 \u001b[0m4.651 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.162Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/routes.js \u001b[36m304 \u001b[0m1.641 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.162Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/bootstrap/dist/js/bootstrap.min.js \u001b[36m304 \u001b[0m1.794 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.165Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/jquery/dist/jquery.min.js \u001b[36m304 \u001b[0m4.744 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.169Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/api.js \u001b[36m304 \u001b[0m4.479 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.170Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/yelp.js \u001b[36m304 \u001b[0m3.623 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.171Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/gMaps.js \u001b[36m304 \u001b[0m16.330 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.184Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/services/insta.js \u001b[36m304 \u001b[0m1.759 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.184Z"}
+{"level":"debug","message":"\u001b[0mGET /bower_components/angular-route/angular-route.min.js \u001b[36m304 \u001b[0m20.660 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.185Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/nav.js \u001b[36m304 \u001b[0m2.333 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.186Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/home.js \u001b[36m304 \u001b[0m1.120 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.187Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/getFood.js \u001b[36m304 \u001b[0m20.471 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.207Z"}
+{"level":"debug","message":"\u001b[0mGET /js/src/controllers/viewRestaurant.js \u001b[36m304 \u001b[0m0.844 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.208Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/home.jade \u001b[36m304 \u001b[0m7.805 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:14.385Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/getFood.jade \u001b[36m304 \u001b[0m27.245 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:15.555Z"}
+{"level":"debug","message":"\u001b[0mGET /%7B%7B%20restaurant.rating_img_url%20%7D%7D \u001b[33m404 \u001b[0m2.579 ms - 56\u001b[0m\n","timestamp":"2015-10-27T20:18:15.583Z"}
+{"level":"debug","message":"\u001b[0mGET /%7B%7B%20restaurant.image_url%20%7D%7D \u001b[33m404 \u001b[0m3.185 ms - 51\u001b[0m\n","timestamp":"2015-10-27T20:18:15.584Z"}
+{"term":"Tacos","location":"SF","level":"info","message":"Yelp Search Request","timestamp":"2015-10-27T20:18:21.168Z"}
+{"level":"debug","message":"\u001b[0mGET /api/yelp/search?location=SF&&term=Tacos \u001b[32m200 \u001b[0m2165.969 ms - 7975\u001b[0m\n","timestamp":"2015-10-27T20:18:21.171Z"}
+{"level":"debug","message":"\u001b[0mGET /partials/viewRestaurant.jade \u001b[36m304 \u001b[0m33.444 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:22.356Z"}
+{"level":"debug","message":"\u001b[0mGET /%7B%7Burl%7D%7D \u001b[33m404 \u001b[0m0.880 ms - 28\u001b[0m\n","timestamp":"2015-10-27T20:18:22.374Z"}
+{"ID":"mateos-taqueria-san-francisco","level":"info","message":"Yelp Get Request","timestamp":"2015-10-27T20:18:22.545Z"}
+{"level":"debug","message":"\u001b[0mGET /api/yelp/get?id=mateos-taqueria-san-francisco \u001b[36m304 \u001b[0m176.122 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:22.546Z"}
+{"ID":"mateos-taqueria-san-francisco","level":"info","message":"Yelp Get Request","timestamp":"2015-10-27T20:18:22.711Z"}
+{"level":"debug","message":"\u001b[0mGET /api/yelp/get?id=mateos-taqueria-san-francisco \u001b[36m304 \u001b[0m163.163 ms - -\u001b[0m\n","timestamp":"2015-10-27T20:18:22.711Z"}
+{"Latitude":"37.75754","Longitude":"-122.41876","level":"info","message":"Instagram Show Request","timestamp":"2015-10-27T20:18:24.047Z"}
+{"level":"debug","message":"\u001b[0mGET /api/insta/show?lat=37.75754&&lng=-122.41876 \u001b[32m200 \u001b[0m4651.687 ms - 6645\u001b[0m\n","timestamp":"2015-10-27T20:18:28.700Z"}
+{"level":"info","message":"Yelp Search Request","timestamp":"2015-10-27T20:19:16.508Z"}
+{"level":"debug","message":"\u001b[0mGET /api/yelp/search \u001b[32m200 \u001b[0m1775.165 ms - 132\u001b[0m\n","timestamp":"2015-10-27T20:19:16.508Z"}
+{"level":"info","message":"Instagram Show Request","timestamp":"2015-10-27T20:19:30.384Z"}
+{"level":"info","message":"Logger setup","timestamp":"2015-10-27T20:20:50.201Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.276Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /css/jumbotron-narrow.css HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.372Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /css/base.css HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.373Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /bower_components/bootstrap/dist/css/bootstrap.min.css HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.374Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /bower_components/angular/angular.min.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.375Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /bower_components/angular-route/angular-route.min.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.376Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /bower_components/jquery/dist/jquery.min.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.376Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /js/src/main.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.379Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /bower_components/bootstrap/dist/js/bootstrap.min.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.380Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /js/src/routes.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.381Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /js/src/services/api.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.381Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /js/src/services/yelp.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.382Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /js/src/services/gMaps.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.382Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /js/src/services/insta.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.383Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /js/src/controllers/nav.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.384Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /js/src/controllers/home.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.385Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /js/src/controllers/viewRestaurant.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.390Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /js/src/controllers/getFood.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.391Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:51 +0000] \"GET /partials/home.jade HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:51.584Z"}
+{"level":"info","message":"Instagram Show Request","timestamp":"2015-10-27T20:20:54.143Z"}
+{"level":"error","message":"Instagram Show Request Failed","timestamp":"2015-10-27T20:20:54.677Z"}
+{"level":"debug","message":"127.0.0.1 - - [27/Oct/2015:20:20:54 +0000] \"GET /api/insta/show HTTP/1.1\" 200 14 \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36\"\n","timestamp":"2015-10-27T20:20:54.678Z"}

@@ -10,14 +10,11 @@ var app = express();
 /*
 * Middle Ware
 */
-var accessLogStream = fs.createWriteStream(__dirname + '/access.log', {flags: 'a'});
-var logStream = {
-    write: function(message, encoding) {
-        accessLogStream.write(message);
-        return console.log("EXPRESS: " + message);
-    }
-};
-app.use(morgan(':method :url :status :response-time', {stream: logStream}));
+
+//Morgan
+var logger = require("./logger.js");
+app.use(require('morgan')("combined", { "stream": logger.stream }));
+logger.log('info', 'Logger setup');
 
 //Public Directories
 app.use(express.static(path.join(__dirname, 'public')));

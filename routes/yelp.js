@@ -1,14 +1,15 @@
 var express = require('express');
 var router = express.Router();
 var config = require("../config.js").yelp;
-
+var Mailgun = require('mailgun').Mailgun;
+var mg = new Mailgun('key-8d747dee2b8cc559d1e41d6aeb61372a');
 var yelp = require("yelp").createClient({
     consumer_key: config.Consumer_Key,
     consumer_secret: config.Consumer_Secret,
     token: config.Token,
     token_secret: config.Token_Secret
 });
-
+var logger = require("../logger.js");
 /**
  * @api {get} /api/yelp/search Search businesses on yelp.
  * @apiName SearchYelp
@@ -24,6 +25,7 @@ var yelp = require("yelp").createClient({
  */
 router.get("/search", function(req, res) {
     yelp.search({term: req.query.term, location: req.query.location, limit: 5}, function(error, data) {
+        logger.log("info","Yelp Search Request", {'term':req.query.term, 'location':req.query.location});
         res.json(data);
     });
 });
@@ -42,6 +44,7 @@ router.get("/search", function(req, res) {
  */
 router.get("/get", function(req, res) {
     yelp.business(req.query.id, function(error, data) {
+        logger.log("info","Yelp Get Request", {'ID':req.query.id});
         res.json(data);
     });
 });
