@@ -2,6 +2,7 @@
 var express = require('express');
 var path = require("path");
 var morgan = require("morgan");
+var fs = require("fs");
 
 //Create the app
 var app = express();
@@ -9,8 +10,14 @@ var app = express();
 /*
 * Middle Ware
 */
-
-app.use(morgan('combined'));
+var accessLogStream = fs.createWriteStream(__dirname + '/access.log', {flags: 'a'});
+var logStream = {
+    write: function(message, encoding) {
+        accessLogStream.write(message);
+        return console.log("EXPRESS: " + message);
+    }
+};
+app.use(morgan(':method :url :status :response-time', {stream: logStream}));
 
 //Public Directories
 app.use(express.static(path.join(__dirname, 'public')));
