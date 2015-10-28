@@ -9,7 +9,7 @@ var yelp = require("yelp").createClient({
     token: config.Token,
     token_secret: config.Token_Secret
 });
-var logger = require("../logger.js");
+var logger = require("../lib/logger.js");
 /**
  * @api {get} /api/yelp/search Search businesses on yelp.
  * @apiName SearchYelp

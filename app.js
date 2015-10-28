@@ -12,7 +12,7 @@ var app = express();
 */
 
 //Morgan
-var logger = require("./logger.js");
+var logger = require("./lib/logger.js");
 app.use(require('morgan')("combined", { "stream": logger.stream }));
 logger.log('info', 'Logger setup');
 
@@ -46,6 +46,11 @@ app.get('/test', function(req, res) {
 
 //Yelp Api
 app.use('/api', apiRoute);
+
+//404
+app.use(function(req, res) {
+    res.redirect('/');
+});
 
 //Export the app object
 module.exports = app;

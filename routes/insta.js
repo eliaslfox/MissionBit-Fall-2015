@@ -7,7 +7,7 @@ var mg = new Mailgun('key-8d747dee2b8cc559d1e41d6aeb61372a');
 ig.use({ client_id: config.client_id,
     client_secret: config.client_secret });
 var math = require("math");
-
+var logger = require("../lib/logger.js");
 function roundNumber (value, decimals) {
     var p = Math.pow(10, decimals);
     return Math.round(value * p) / p;
