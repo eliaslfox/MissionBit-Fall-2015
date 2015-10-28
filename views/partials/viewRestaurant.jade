@@ -17,11 +17,11 @@ div(ng-controller="viewRestaurant", ng-show="ready")
         div.panel-heading
             h3 Map
         div.panel-body
-            div#map.spacing
+            div#map.spacing.embed-responsive
 
     div.panel.panel-default(ng-show="instaGenned")
         div.panel-heading
             h3 Instagram Posts
         div.panel-body
             div(ng-repeat="url in instaData")
-                img(src="{{url}}")
+                img(src="{{url}}", width="80%")
