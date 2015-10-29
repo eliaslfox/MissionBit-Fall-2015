@@ -5,6 +5,19 @@ var logger = require("../lib/logger.js");
 var mail = require("../lib/mail.js");
 var user = require("../lib/user.js");
 
+/**
+ * @api {get} /api/user/add Add a user.
+ * @apiName AddUser
+ * @apiGroup User
+ *
+ *@apiVersion 1.0.0
+ *
+ * @apiParam {String} username Username of new user.
+ * @apiParam {String} email Email of new user.
+ *
+ * @apiSuccess {String} result Api Call Complete
+ *
+ */
 router.get("/add", function(req, res) {
     var username = req.query.username;
     var email = req.query.email;
@@ -16,6 +29,19 @@ router.get("/add", function(req, res) {
     });
 });
 
+/**
+ * @api {get} /api/user/login Login a user.
+ * @apiName LoginUser
+ * @apiGroup User
+ *
+ *@apiVersion 1.0.0
+ *
+ * @apiParam {String} username Username of new user.
+ * @apiParam {String} password Password of new user.
+ *
+ * @apiSuccess {String} result Api Call Complete
+ *
+ */
 router.get("/login", function(req, res) {
     var username = req.query.username;
     var password = req.query.password;
@@ -25,6 +51,18 @@ router.get("/login", function(req, res) {
     });
 });
 
+/**
+ * @api {get} /api/user/gen Generate a new otp.
+ * @apiName GenUser
+ * @apiGroup User
+ *
+ *@apiVersion 1.0.0
+ *
+ * @apiParam {String} username Username of user to gen a password for.
+ *
+ * @apiSuccess {String} result Api Call Complete
+ *
+ */
 router.get("/gen", function(req, res) {
     var username = req.query.username;
     user.gen(username, function(data){

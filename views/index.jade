@@ -26,6 +26,7 @@ html(lang='en')
         script(src="/js/src/services/yelp.js")
         script(src="/js/src/services/gMaps.js")
         script(src="/js/src/services/insta.js")
+        script(src="/js/src/services/user.js")
 
 
     body(ng-app="getMeFood")
@@ -37,6 +38,8 @@ html(lang='en')
                         a(href='/') Home
                     li(role='presentation', ng-click="updateActive('getFood')", id="getFood")
                         a(href='/getFood') Get Food
+                    li(role='presentation', ng-click="updateActive('account')", id="account")
+                        a(href='/account') Account
             h3.text-muted Get Me Food
         div(ng-view)
         footer.footer
@@ -48,3 +51,4 @@ html(lang='en')
     script(src="/js/src/controllers/home.js")
     script(src="/js/src/controllers/getFood.js")
     script(src="/js/src/controllers/viewRestaurant.js")
+    script(src="/js/src/controllers/account.js")

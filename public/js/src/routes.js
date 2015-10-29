@@ -18,6 +18,10 @@ angular.module("getMeFood").config(['$routeProvider', "$locationProvider",
             .when('/viewRestaurant/:id', {
                 templateUrl: 'partials/viewRestaurant.jade',
                 controller: 'viewRestaurant'
+            })
+            .when('/account', {
+                templateUrl: 'partials/account.jade',
+                controller: 'account'
             });
         $locationProvider.html5Mode(true);
     }]);

@@ -7,4 +7,13 @@ angular.module("getMeFood").controller("nav", ["$scope", function($scope) {
         });
         $("#"+page).addClass("active");
     };
+    $scope.setUser = function(username, password) {
+        $scope.user = {
+            username: username,
+            password: password
+        }
+    };
+    $scope.loggoutUser = function() {
+      $scope.user = null;
+    };
 }]);

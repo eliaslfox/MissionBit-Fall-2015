@@ -1,5 +1,5 @@
 div(ng-controller="HomeController")
     .jumbotron
-        h1 {{ greeting }}
+        h1 {{ greeting }} {{ user.username }}!
         p
             a.btn.btn-lg.btn-success(href='/getFood', role='button') Get Food

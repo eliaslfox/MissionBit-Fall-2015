@@ -1,0 +1,34 @@
+div(ng-controller="account")
+    ul.nav.nav-tabs#page-nav(ng-hide="mode == 'result' || mode == 'loggedin'")
+        li(ng-click="setPage('signup')", id="signup").active
+            a() Signup
+        li(ng-click="setPage('login')", id="login")
+            a() Login
+        li(ng-click="setPage('gen')", id="gen")
+            a() Gen New OTP
+    .jumbotron(ng-hide="mode == 'result' || mode == 'loggedin'")
+        div(ng-show="mode == 'signup'")
+            .input-group.input-group-lg.spacing
+                input.form-control(type='text', placeholder='Username', ng-model="username")
+            .input-group.input-group-lg.spacing
+                input.form-control(type='text', aria-label='...', placeholder="Email", ng-model="email")
+            button.btn.btn-default.btn-primary(type="button", ng-click="signup()") Signup
+
+        div(ng-show="mode == 'login'")
+            .input-group.input-group-lg.spacing
+                input.form-control(type='text', placeholder='Username', ng-model="username")
+            .input-group.input-group-lg.spacing
+                input.form-control(type='text', aria-label='...', placeholder="Password", ng-model="password")
+            button.btn.btn-default.btn-primary(type="button", ng-click="login()") Login
+
+        div(ng-show="mode == 'gen'")
+            .input-group.input-group-lg.spacing
+                input.form-control(type='text', aria-label='...', placeholder="Username", ng-model="username")
+            button.btn.btn-default.btn-primary(type="button", ng-click="gen()") Gen New OTP
+
+    .jumbotron(ng-show="mode == 'result'")
+        p {{ result }}
+
+    .jumbotron(ng-show="mode == 'loggedin'")
+        p Welcome {{ user.username }}
+        button.btn.btn-default.btn-primary(type="button", ng-click="logout()") Logout
