@@ -26,9 +26,13 @@ div(ng-controller="account")
                 input.form-control(type='text', aria-label='...', placeholder="Username", ng-model="username")
             button.btn.btn-default.btn-primary(type="button", ng-click="gen()") Gen New OTP
 
-    .jumbotron(ng-show="mode == 'result'")
+    .jumbotron(ng-show="mode == 'result' && info != 'loginInfo'")
         p {{ result }}
 
     .jumbotron(ng-show="mode == 'loggedin'")
-        p Welcome {{ user.username }}
+        p Welcome {{ user.username }}!
         button.btn.btn-default.btn-primary(type="button", ng-click="logout()") Logout
+
+    .jumbotron(ng-show="info == 'loginInfo'")
+        p An email containing your password has been sent to {{ email }}. This password is valid for 30 minutes starting now.
+        button.btn.btn-default.btn-primary(type="button", ng-click="goToLogin()") Login

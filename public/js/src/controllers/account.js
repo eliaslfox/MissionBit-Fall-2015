@@ -17,6 +17,7 @@ angular.module("getMeFood").controller("account", ["$scope", "user", function($s
         user.signup($scope.username, $scope.email).then(function(data) {
             $scope.result = data;
             $scope.mode = "result";
+            $scope.info = "loginInfo";
         });
     };
     $scope.login = function() {
@@ -27,7 +28,6 @@ angular.module("getMeFood").controller("account", ["$scope", "user", function($s
                 $scope.mode = "loggedin";
                 return;
             }
-            $scope.mode = "result";
         });
     };
     $scope.gen = function() {
@@ -39,5 +39,10 @@ angular.module("getMeFood").controller("account", ["$scope", "user", function($s
     $scope.logout = function() {
         $scope.loggoutUser();
         $scope.mode = "signup";
+    };
+    $scope.goToLogin = function() {
+        $scope.mode = "login";
+        $scope.info = null;
+        $scope.setPage("login");
     }
 }]);

@@ -4,7 +4,7 @@ var account = require("../models/account.js");
 var logger = require("../lib/logger.js");
 var mail = require("../lib/mail.js");
 var user = require("../lib/user.js");
-
+var dateFormat = require('dateformat');
 /**
  * @api {get} /api/user/add Add a user.
  * @apiName AddUser
@@ -19,13 +19,14 @@ var user = require("../lib/user.js");
  *
  */
 router.get("/add", function(req, res) {
+    var now = new Date();
     var username = req.query.username;
     var email = req.query.email;
     logger.log("info", "User Add", {email: email, username: username});
     user.add(username, email, function(password) {
         if (password == "ERROR") return;
         res.send("Api Call Complete");
-        mail.sendBasic(email, "Your Get Me Food OTP", "Your otp is "+password);
+        mail.sendBasic(email, "Your Get Me Food OTP for "+dateFormat(now, "dddd, mmmm dS, yyyy, h:MM:ss TT"), "Your otp is "+password);
     });
 });
 
