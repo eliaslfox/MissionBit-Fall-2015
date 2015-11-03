@@ -31,7 +31,7 @@ router.get("/add", function(req, res) {
 });
 
 /**
- * @api {get} /api/user/login Login a user.
+ * @api {post} /api/user/login Login a user.
  * @apiName LoginUser
  * @apiGroup User
  *
