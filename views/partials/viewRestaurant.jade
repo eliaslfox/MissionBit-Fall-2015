@@ -8,7 +8,6 @@ div(ng-controller="viewRestaurant", ng-show="ready")
             img(src="{{ restaurant.image_url }}").spacing
             br
             .btn-group(role='group', aria-label='...')
-                button.btn.btn-default(type='button', ng-click="goToPage(restraunt.url)") Yelp Website
                 button.btn.btn-default(type='button', ng-click="genMap()", ng-hide="mapGenned") Show Map
                 button.btn.btn-default(type='button', ng-click="genInsta()", ng-hide="instaGenned") Show Instagram Feed
                 button.btn.btn-default(ng-click="goToPage(restaurant.directionsLink)") Directions

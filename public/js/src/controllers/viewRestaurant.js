@@ -21,7 +21,7 @@ angular.module("getMeFood").controller("viewRestaurant", ["$scope", "$routeParam
         return "location.href='"+data +"'";
     };
     $scope.goToPage = function(url) {
-        location.href=url;
+        location.href="http://"+url;
     };
     $scope.genInsta = function() {
         insta.search($scope.restaurant.location.coordinate.latitude, $scope.restaurant.location.coordinate.longitude).then(function(data) {
