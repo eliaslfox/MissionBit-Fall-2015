@@ -24,6 +24,13 @@ app.use('/apidoc', express.static(path.join(__dirname, 'apidoc')));
 //Jade
 app.set('view engine', 'jade');
 
+//Body Parser
+var bodyParser = require('body-parser')
+app.use( bodyParser.json() );
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+
 /*
 * Routes
 */

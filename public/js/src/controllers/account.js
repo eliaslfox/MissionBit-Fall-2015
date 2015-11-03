@@ -27,6 +27,10 @@ angular.module("getMeFood").controller("account", ["$scope", "user", function($s
                 $scope.setUser($scope.username, $scope.password);
                 $scope.mode = "loggedin";
                 return;
+            } else {
+                $scope.mode = "result";
+                $scope.info = null;
+                $scope.result = "Login Failed";
             }
         });
     };

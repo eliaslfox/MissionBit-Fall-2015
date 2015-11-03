@@ -6,6 +6,13 @@ angular.module("getMeFood")
                 .then(function(result) {
                     return result.data;
                 });
+        },
+        post: function(url, data) {
+            return $http.post(url, data)
+                .then(function(result) {
+                   return result.data;
+                });
+
         }
     };
 }]);

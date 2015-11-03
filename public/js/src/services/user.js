@@ -7,7 +7,7 @@ angular.module("getMeFood").factory("user", ["api", function(api) {
                 });
         },
         login: function(username, password) {
-            return api.get('/api/user/login?username='+username+'&&password='+password)
+            return api.post('/api/user/login', {username: username, password: password})
                 .then(function(result) {
                     return result;
                 });

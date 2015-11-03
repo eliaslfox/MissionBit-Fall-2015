@@ -43,9 +43,9 @@ router.get("/add", function(req, res) {
  * @apiSuccess {String} result Api Call Complete
  *
  */
-router.get("/login", function(req, res) {
-    var username = req.query.username;
-    var password = req.query.password;
+router.post("/login", function(req, res) {
+    var username = req.body.username;
+    var password = req.body.password;
     user.check(username, password, function(data) {
         logger.log("info", "User Check", {username: username, password: password, result: data});
         res.send(data);
