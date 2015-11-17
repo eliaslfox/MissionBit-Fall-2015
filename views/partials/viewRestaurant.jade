@@ -10,6 +10,7 @@ div(ng-controller="viewRestaurant", ng-show="ready")
             .btn-group(role='group', aria-label='...')
                 button.btn.btn-default(type='button', ng-click="genMap()", ng-hide="mapGenned") Show Map
                 button.btn.btn-default(type='button', ng-click="genInsta()", ng-hide="instaGenned") Show Instagram Feed
+                button.btn.btn-default(ng-click="showComments()", ng-hide="comments") Comments
                 button.btn.btn-default(ng-click="goToPage(restaurant.directionsLink)") Directions
 
     div.panel.panel-default(ng-show="mapGenned")
@@ -24,3 +25,19 @@ div(ng-controller="viewRestaurant", ng-show="ready")
         div.panel-body
             div(ng-repeat="url in instaData")
                 img(src="{{url}}", width="80%")
+
+    div.panel.panel-default(ng-show="comments")
+        div.panel-heading
+            h3 Comments
+        div.panel-body
+            div(style="margin-bottom: 10px")
+                .input-group.input-group-lg
+                    input.form-control(type='text', placeholder='Location', ng-model="commentText")
+                    span.input-group-btn
+                        button.btn.btn-default(type='button', ng-click="addComment()") Post
+            div(ng-repeat="comment in commentList")
+                div.panel.panel-default
+                    div.panel-heading
+                        h4 {{comment.author}}
+                    div.panel-body
+                        p {{comment.text}}

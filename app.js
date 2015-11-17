@@ -51,6 +51,10 @@ app.get('/test', function(req, res) {
     res.send("hi from /test");
 });
 
+app.get("/ping/:id", function(req, res) {
+   res.send("Pong" + req.params.id);
+});
+
 //Yelp Api
 app.use('/api', apiRoute);
 
@@ -58,6 +62,7 @@ app.use('/api', apiRoute);
 app.use(function(req, res) {
     res.redirect('/');
 });
+
 
 //Export the app object
 module.exports = app;
